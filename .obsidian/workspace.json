@@ -11,10 +11,14 @@
             "id": "dbd54b8295740f49",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "代码基础/java/netty.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "netty"
             }
           }
         ]
@@ -136,12 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "代码基础/java/netty.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "netty 的大纲"
             }
           },
           {
@@ -150,12 +155,12 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -172,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac55f27f3f2c760a",
+  "active": "dbd54b8295740f49",
   "lastOpenFiles": [
     "代码基础/java/netty.md",
     "代码基础/rust",
