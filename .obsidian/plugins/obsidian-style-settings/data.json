@@ -7,5 +7,6 @@
   "anuppuccin-theme-settings@@anp-active-line": "anp-current-line",
   "Components@@tab-autohide": true,
   "Components@@status-bar-autohide": true,
-  "Components@@Ribbon-autohide": true
+  "Components@@Ribbon-autohide": true,
+  "Editor@@codeblock-style-select": "codeblock-style-one-dark"
 }
