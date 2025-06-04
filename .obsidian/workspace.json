@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "73722149a3456ebd",
+        "id": "8e1048f98db1fff5",
         "type": "tabs",
         "children": [
           {
-            "id": "dbd54b8295740f49",
+            "id": "8f2dc18c990484de",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "image",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
+                "file": "File/img/image-20250603093725572.png"
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "icon": "lucide-image",
+              "title": "image-20250603093725572"
             }
           }
         ]
@@ -140,12 +138,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "File/img/image-20250603093725572.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "image-20250603093725572 的大纲"
             }
           },
           {
@@ -163,7 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364.5
+    "width": 794.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,7 +175,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0454ac224e78d2cc",
+  "active": "8f2dc18c990484de",
   "lastOpenFiles": [
     "File/pdf/img/0051.png",
     "File/pdf/img/0050.png",
