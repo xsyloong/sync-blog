@@ -8,5 +8,8 @@
   "Components@@tab-autohide": true,
   "Components@@status-bar-autohide": true,
   "Components@@Ribbon-autohide": true,
-  "Editor@@codeblock-style-select": "codeblock-style-one-dark"
+  "Editor@@codeblock-style-select": "codeblock-style-one-dark",
+  "Mobile@@card-layout-pad-open": true,
+  "Mobile@@drawer-phone-full-width": true,
+  "Editor@@img-center-align": false
 }
