@@ -63,7 +63,7 @@
           }
   ```
 
-  ![image-20250603093725572](C:\Users\23697\Desktop\assets\image-20250603093725572.png)
+  ![[image-20250603093725572.png]]
 
 - 处理**读事件**
 
@@ -227,7 +227,7 @@
 
 - 创建Cpu核心数多线程，每个线程创建一个selector，专门读写事件
 
-- 模型![image-20250603093745669](C:\Users\23697\Desktop\assets\image-20250603093745669.png)
+- 模型![[image-20250603093745669.png]]
 
 - 实践
 
@@ -471,7 +471,7 @@
   }
   ```
 
-- Netty 应用流程![image-20250603093838489](C:\Users\23697\Desktop\assets\image-20250603093838489.png)
+- Netty 应用流程![[image-20250603093838489.png]]
 
   > **💡\*注意\***
   >
@@ -507,6 +507,7 @@
 > 3. 继承自 netty 自己的 EventExecutorGroup
 >    - 实现了 Iterable 接口提供遍历 EventLoop 的能力
 >    - 另有 next 方法获取集合中下一个 EventLoop
+>  
 
 - `EventLoop`  执行任务
 
@@ -580,7 +581,7 @@
             }
     ```
 
-  - 原理分析：handler 之间如何切换线程的![image-20250603093902871](C:\Users\23697\Desktop\assets\image-20250603093902871.png)
+  - 原理分析：handler 之间如何切换线程的![[image-20250603093902871.png]]
 
     - 关键代码 `io.netty.channel.AbstractChannelHandlerContext#invokeChannelRead()`
 
