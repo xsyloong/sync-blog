@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Life/编程基础/java/netty.md",
+                "file": "Code Life/搞着玩/Vim探索.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "netty"
+              "title": "Vim探索"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/编程基础/java/netty.md",
+                "file": "Code Life/搞着玩/Vim探索.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "netty 的大纲"
+              "title": "Vim探索 的大纲"
             }
           },
           {
@@ -178,12 +178,17 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "f2332e49e57681bf",
+  "active": "dbd54b8295740f49",
   "lastOpenFiles": [
+    "Code Life/好文推荐.md",
+    "Code Life/搞着玩/Vim探索.md",
+    "Code Life/搞着玩",
+    "Code Life/瞎折腾",
+    "Code Life/编程基础/java/netty.md",
+    "Code Life/好文推荐",
     "未命名",
     "Code Life/编程基础",
     "未命名.canvas",
-    "Code Life/编程基础/java/netty.md",
     "2025-06-04.md",
     "代码基础/rust",
     "Code Life/编程基础/java",
