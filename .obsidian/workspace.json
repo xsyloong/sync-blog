@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代码基础/java/netty.md",
+                "file": "Code Life/编程基础/java/netty.md",
                 "mode": "source",
                 "source": false
               },
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代码基础/java/netty.md",
+                "file": "Code Life/编程基础/java/netty.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,13 +178,15 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "11e4662893c4b7b0",
+  "active": "f2332e49e57681bf",
   "lastOpenFiles": [
+    "未命名",
+    "Code Life/编程基础",
     "未命名.canvas",
-    "代码基础/java/netty.md",
+    "Code Life/编程基础/java/netty.md",
     "2025-06-04.md",
     "代码基础/rust",
-    "代码基础/java",
-    "代码基础"
+    "Code Life/编程基础/java",
+    "Code Life"
   ]
 }
