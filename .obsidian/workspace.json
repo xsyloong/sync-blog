@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 248.5
   },
   "right": {
     "id": "583a3d5802849300",
@@ -164,7 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 364.5
+    "width": 266.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,7 +177,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "11e4662893c4b7b0",
+  "active": "dbd54b8295740f49",
   "lastOpenFiles": [
     "代码基础/java/netty.md",
     "代码基础/rust",
