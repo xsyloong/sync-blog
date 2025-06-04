@@ -1,6 +1,7 @@
 {
   "attachmentFolderPath": "File/img",
   "userIgnoreFilters": [
-    "File/"
+    "File/img/",
+    "File/pdf/img/"
   ]
 }
