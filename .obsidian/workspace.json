@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "76afa9572ff809ed",
+        "id": "73722149a3456ebd",
         "type": "tabs",
         "children": [
           {
-            "id": "5a6ead92252f1bc2",
+            "id": "dbd54b8295740f49",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Code Life/编程基础/java/Netty.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Netty"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -54,7 +54,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": true,
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 300
   },
   "right": {
     "id": "583a3d5802849300",
@@ -140,17 +140,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/编程基础/java/Netty.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Netty 的大纲"
+              "title": "大纲"
             }
           },
           {
-            "id": "11e4662893c4b7b0",
+            "id": "0454ac224e78d2cc",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -164,7 +163,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 364.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,16 +173,11 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "callout-manager:Insert Callout": false,
-      "iconic:打开规则书": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "11e4662893c4b7b0",
+  "active": "0454ac224e78d2cc",
   "lastOpenFiles": [
-    "Code Life/好文推荐.md",
-    "Code Life/编程基础/java/Netty.md",
-    "File/pdf/Netty01-nio.md",
     "File/pdf/img/0051.png",
     "File/pdf/img/0050.png",
     "File/pdf/img/0049.png",
@@ -194,26 +188,25 @@
     "File/pdf/img/0043.png",
     "File/pdf/img/0042.png",
     "File/pdf/img/0041.png",
-    "img/0037.png.md",
-    "img",
-    "File/pdf/Netty02-netty入门.md",
+    "File/pdf/img/0040.png",
     "File/pdf/img",
-    "Code Life/搞着玩/Vim探索.md",
     "File/pdf/Netty04-优化与源码.md",
     "File/pdf/Netty03-netty进阶.md",
-    "Code Life/搞着玩/Linux 探索.md",
-    "File/zip/Netty-讲义.zip",
-    "File/zip",
-    "().md",
-    "!info.md",
+    "File/pdf/Netty02-netty入门.md",
+    "File/pdf/Netty01-nio.md",
     "File/pdf",
     "File/img",
     "File",
-    "凤凰架构.md",
+    "Code Life/编程基础/java/netty.md",
+    "Code Life/编程基础/java",
+    "Code Life/搞着玩/Vim探索.md",
+    "Code Life/搞着玩/Linux 探索.md",
+    "Code Life/编程基础",
     "Code Life/搞着玩",
-    "Code Life/瞎折腾",
-    "Code Life/好文推荐",
-    "未命名.canvas",
-    "2025-06-04.md"
+    "Code Life/好文推荐.md",
+    "Code Life",
+    "代码基础/java/netty.md",
+    "代码基础/rust",
+    "代码基础/java"
   ]
 }
