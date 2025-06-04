@@ -4,19 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8e1048f98db1fff5",
+        "id": "1a0e80867b5a431d",
         "type": "tabs",
         "children": [
           {
-            "id": "8f2dc18c990484de",
+            "id": "4917a813c62cc1e2",
             "type": "leaf",
             "state": {
-              "type": "image",
-              "state": {
-                "file": "File/img/image-20250603093725572.png"
-              },
-              "icon": "lucide-image",
-              "title": "image-20250603093725572"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -138,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "File/img/image-20250603093725572.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "image-20250603093725572 的大纲"
+              "title": "大纲"
             }
           },
           {
@@ -175,8 +172,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f2dc18c990484de",
+  "active": "4917a813c62cc1e2",
   "lastOpenFiles": [
+    "File/img/image-20250603093725572.png",
     "File/pdf/img/0051.png",
     "File/pdf/img/0050.png",
     "File/pdf/img/0049.png",
@@ -187,7 +185,6 @@
     "File/pdf/img/0043.png",
     "File/pdf/img/0042.png",
     "File/pdf/img/0041.png",
-    "File/pdf/img/0040.png",
     "File/pdf/img",
     "File/pdf/Netty04-优化与源码.md",
     "File/pdf/Netty03-netty进阶.md",
