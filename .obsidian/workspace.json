@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "583a3d5802849300",
@@ -161,7 +160,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -179,7 +178,7 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "dbd54b8295740f49",
+  "active": "11e4662893c4b7b0",
   "lastOpenFiles": [
     "未命名.canvas",
     "代码基础/java/netty.md",
