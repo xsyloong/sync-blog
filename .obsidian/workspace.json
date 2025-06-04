@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "73722149a3456ebd",
+        "id": "176802e27f2e56a4",
         "type": "tabs",
         "children": [
           {
-            "id": "dbd54b8295740f49",
+            "id": "90649477ad616047",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -54,7 +54,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 279.5
   },
   "right": {
     "id": "583a3d5802849300",
@@ -178,13 +178,14 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "dbd54b8295740f49",
+  "active": "90649477ad616047",
   "lastOpenFiles": [
-    "Code Life/好文推荐.md",
+    "Code Life/编程基础/java/Netty.md",
     "Code Life/搞着玩/Vim探索.md",
+    "Code Life/好文推荐.md",
+    "凤凰架构.md",
     "Code Life/搞着玩",
     "Code Life/瞎折腾",
-    "Code Life/编程基础/java/netty.md",
     "Code Life/好文推荐",
     "未命名",
     "Code Life/编程基础",
