@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Life/搞着玩/Vim探索.md",
+                "file": "Code Life/编程基础/java/Netty.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vim探索"
+              "title": "Netty"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/搞着玩/Vim探索.md",
+                "file": "Code Life/编程基础/java/Netty.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Vim探索 的大纲"
+              "title": "Netty 的大纲"
             }
           },
           {
@@ -160,7 +160,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -180,8 +180,8 @@
   },
   "active": "90649477ad616047",
   "lastOpenFiles": [
-    "Code Life/编程基础/java/Netty.md",
     "Code Life/搞着玩/Vim探索.md",
+    "Code Life/编程基础/java/Netty.md",
     "Code Life/好文推荐.md",
     "凤凰架构.md",
     "Code Life/搞着玩",
