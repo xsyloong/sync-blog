@@ -175,8 +175,7 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "obsidian-git:Open Git source control": false,
-      "callout-manager:Insert Callout": false,
-      "iconic:打开规则书": false
+      "callout-manager:Insert Callout": false
     }
   },
   "active": "f2332e49e57681bf",
