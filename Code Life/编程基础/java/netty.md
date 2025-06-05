@@ -1,4 +1,5 @@
-> B站课程：
+> [!INFO] 
+   B站课程：
 >
 > https://www.bilibili.com/video/BV1py4y1E7oA
 >
