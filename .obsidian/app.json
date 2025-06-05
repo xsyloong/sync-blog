@@ -3,5 +3,6 @@
   "userIgnoreFilters": [
     "File/img/",
     "File/pdf/img/"
-  ]
+  ],
+  "vimMode": false
 }
