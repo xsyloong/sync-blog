@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "76afa9572ff809ed",
+        "id": "8d6c042273f42bd8",
         "type": "tabs",
         "children": [
           {
-            "id": "5a6ead92252f1bc2",
+            "id": "878a1f068031d673",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Code Life/编程基础/java/Netty.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Netty"
+              "title": "新标签页"
             }
           }
         ]
@@ -164,7 +160,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 324.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,17 +174,18 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "5a6ead92252f1bc2",
+  "active": "11e4662893c4b7b0",
   "lastOpenFiles": [
-    "Code Life/搞着玩/Linux 探索.md",
+    "Code Life/项目实践/学习项目/API网关 - java.md",
+    "未命名.md",
     "Code Life/搞着玩/Vim探索.md",
+    "Code Life/编程基础/java/Netty.md",
+    "Code Life/搞着玩/Linux 探索.md",
     "File/img/image-20250603093838489.png",
     "File/img/image-20250603093745669.png",
     "File/img/image-20250603093725572.png",
     "Code Life/好文推荐.md",
     "File/icon",
-    "Code Life/项目实践/学习项目/API网关 - java.md",
-    "Code Life/编程基础/java/Netty.md",
     "Code Life/项目实践/学习项目",
     "Code Life/项目实践",
     "File/pdf/Netty01-nio.md",
