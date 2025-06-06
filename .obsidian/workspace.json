@@ -11,14 +11,15 @@
             "id": "878a1f068031d673",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Code Life/编程基础/java/Netty.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Code Life/搞着玩/Vim探索.md",
+                "bFile": "Code Life/搞着玩/Vim探索.md",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Netty"
+              "icon": "diff",
+              "title": "Diff: Vim探索"
             }
           }
         ]
@@ -180,15 +181,16 @@
   },
   "active": "878a1f068031d673",
   "lastOpenFiles": [
-    "Code Life/搞着玩/Linux 探索.md",
-    "Code Life/项目实践/学习项目/API网关 - java.md",
-    "未命名.md",
+    "Code Life/好文推荐.md",
     "Code Life/搞着玩/Vim探索.md",
     "Code Life/编程基础/java/Netty.md",
+    "Code Life/搞着玩/Linux 探索.md",
+    "Code Life/项目实践/学习项目/API网关 - java.md",
+    "conflict-files-obsidian-git.md",
+    "未命名.md",
     "File/img/image-20250603093838489.png",
     "File/img/image-20250603093745669.png",
     "File/img/image-20250603093725572.png",
-    "Code Life/好文推荐.md",
     "File/icon",
     "Code Life/项目实践/学习项目",
     "Code Life/项目实践",
