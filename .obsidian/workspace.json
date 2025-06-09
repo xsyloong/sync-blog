@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8d6c042273f42bd8",
+        "id": "d6c49c96fd2d641a",
         "type": "tabs",
         "children": [
           {
-            "id": "878a1f068031d673",
+            "id": "9ed1653978b52e38",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Life/项目实践/学习项目/API网关 - java.md",
+                "file": "Code Life/编程基础/java/Netty.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API网关 - java"
+              "title": "Netty"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 279.5
+    "width": 251.5,
+    "collapsed": true
   },
   "right": {
     "id": "583a3d5802849300",
@@ -140,13 +141,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/好文推荐.md",
+                "file": "Code Life/编程基础/java/Netty.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "好文推荐 的大纲"
+              "title": "Netty 的大纲"
             }
           },
           {
@@ -160,11 +161,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 337.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,14 +179,14 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "878a1f068031d673",
+  "active": "9ed1653978b52e38",
   "lastOpenFiles": [
-    "Code Life/搞着玩/Vim探索.md",
     "Code Life/项目实践/学习项目/API网关 - java.md",
+    "Code Life/搞着玩/Linux 探索.md",
+    "Code Life/搞着玩/Vim探索.md",
     "Code Life/好文推荐.md",
     "conflict-files-obsidian-git.md",
     "Code Life/编程基础/java/Netty.md",
-    "Code Life/搞着玩/Linux 探索.md",
     "未命名.md",
     "File/img/image-20250603093838489.png",
     "File/img/image-20250603093745669.png",
