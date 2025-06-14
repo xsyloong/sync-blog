@@ -46,27 +46,6 @@
     "type": "split",
     "children": [
       {
-        "id": "91ec77a58386d1a0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ac55f27f3f2c760a",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Code Life/搞着玩/Linux 探索.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Linux 探索 的大纲"
-            }
-          }
-        ]
-      },
-      {
         "id": "058605f6c91e5bdf",
         "type": "tabs",
         "children": [
@@ -108,6 +87,27 @@
               "state": {},
               "icon": "lucide-bookmark",
               "title": "书签"
+            }
+          }
+        ]
+      },
+      {
+        "id": "e0d4945ccf8ba433",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ac55f27f3f2c760a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Code Life/搞着玩/Linux 探索.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Linux 探索 的大纲"
             }
           }
         ]
@@ -185,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5
+    "width": 309.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,7 +200,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e982ba34c72ccdb2",
+  "active": "ac55f27f3f2c760a",
   "lastOpenFiles": [
     "Code Life/编程基础/java/netty.md",
     "Code Life/搞着玩/Vim探索.md",
