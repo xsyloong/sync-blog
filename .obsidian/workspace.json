@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Life/搞着玩/Linux 探索.md",
+                "file": "Code Life/项目实践/学习项目/API网关 - java.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Linux 探索"
+              "title": "API网关 - java"
             }
           }
         ],
@@ -101,13 +101,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/搞着玩/Linux 探索.md",
+                "file": "Code Life/项目实践/学习项目/API网关 - java.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Linux 探索 的大纲"
+              "title": "API网关 - java 的大纲"
             }
           }
         ]
@@ -200,12 +200,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac55f27f3f2c760a",
+  "active": "e982ba34c72ccdb2",
   "lastOpenFiles": [
     "Code Life/编程基础/java/netty.md",
+    "Code Life/项目实践/学习项目/API网关 - java.md",
+    "Code Life/搞着玩/Linux 探索.md",
     "Code Life/搞着玩/Vim探索.md",
     "conflict-files-obsidian-git.md",
-    "Code Life/项目实践/学习项目/API网关 - java.md",
     "Code Life/项目实践/开源项目",
     "Code Life/项目实践/学习项目",
     "Code Life/项目实践",
@@ -228,7 +229,6 @@
     "File/img",
     "File",
     "Code Life/编程基础/java",
-    "Code Life/搞着玩/Linux 探索.md",
     "Code Life/编程基础",
     "Code Life/搞着玩",
     "Code Life/好文推荐.md",
