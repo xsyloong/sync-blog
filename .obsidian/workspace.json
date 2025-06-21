@@ -109,12 +109,22 @@
               "icon": "lucide-list",
               "title": "API网关 - java 的大纲"
             }
+          },
+          {
+            "id": "0454ac224e78d2cc",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 272.5
   },
   "right": {
     "id": "583a3d5802849300",
@@ -169,19 +179,9 @@
               "icon": "lucide-tags",
               "title": "标签"
             }
-          },
-          {
-            "id": "0454ac224e78d2cc",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -203,9 +203,9 @@
   "active": "e982ba34c72ccdb2",
   "lastOpenFiles": [
     "Code Life/编程基础/java/netty.md",
-    "Code Life/项目实践/学习项目/API网关 - java.md",
     "Code Life/搞着玩/Linux 探索.md",
     "Code Life/搞着玩/Vim探索.md",
+    "Code Life/项目实践/学习项目/API网关 - java.md",
     "conflict-files-obsidian-git.md",
     "Code Life/项目实践/开源项目",
     "Code Life/项目实践/学习项目",
