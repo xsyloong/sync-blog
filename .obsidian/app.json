@@ -4,5 +4,6 @@
     "File/img/",
     "File/pdf/img/"
   ],
-  "vimMode": false
+  "vimMode": false,
+  "readableLineLength": false
 }
