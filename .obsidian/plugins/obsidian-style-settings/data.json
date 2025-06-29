@@ -13,7 +13,8 @@
   "Components@@vault-profile-autohide": false,
   "Components@@extra-anim-remove": true,
   "Components@@anim-speed": 1.35,
-  "Appearance-light@@card-layout-open-light": true,
   "Components@@file-icon-remove": false,
-  "Components@@colorful-folder": true
+  "Components@@colorful-folder": true,
+  "Appearance-dark@@card-layout-open-dark": true,
+  "Appearance-light@@card-layout-open-light": false
 }
