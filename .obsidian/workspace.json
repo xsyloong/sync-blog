@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "Code Life/编程基础/java/netty.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -120,7 +120,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
