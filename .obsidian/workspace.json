@@ -94,6 +94,16 @@
               "icon": "lucide-list",
               "title": "好文推荐 的大纲"
             }
+          },
+          {
+            "id": "0454ac224e78d2cc",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ]
       }
@@ -154,23 +164,14 @@
               "icon": "lucide-tags",
               "title": "标签"
             }
-          },
-          {
-            "id": "0454ac224e78d2cc",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 404.5
+    "width": 404.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
