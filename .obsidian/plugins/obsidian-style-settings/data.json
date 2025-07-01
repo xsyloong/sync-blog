@@ -7,7 +7,7 @@
   "anuppuccin-theme-settings@@anp-active-line": "anp-current-line",
   "Components@@tab-autohide": true,
   "Components@@status-bar-autohide": true,
-  "Components@@Ribbon-autohide": false,
+  "Components@@Ribbon-autohide": true,
   "Components@@nav-header-autohide": true,
   "Components@@tab-title-bar-autohide": false,
   "Components@@vault-profile-autohide": false,
