@@ -110,7 +110,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5
+    "width": 272.5,
+    "collapsed": true
   },
   "right": {
     "id": "583a3d5802849300",
@@ -188,6 +189,8 @@
   },
   "active": "a0df744bcadb306c",
   "lastOpenFiles": [
+    "File/img/Pasted image 20250707225943.png",
+    "File/img/Pasted image 20250707225708.png",
     "Code Life/项目实践/学习项目/API网关 - java.md",
     "Code Life/编程基础/java/netty.md",
     "Code Life/项目实践/企业场景方案/动态属性配置系统  - java.md",
@@ -210,7 +213,6 @@
     "File/pdf/img/0046.png",
     "File/pdf/img/0044.png",
     "File/pdf/img/0043.png",
-    "File/pdf/img/0042.png",
     "File/pdf/img",
     "File/pdf/Netty04-优化与源码.md",
     "File/pdf/Netty03-netty进阶.md",
