@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9db93e1054cc3e78",
+        "id": "cf3e454cd9403e98",
         "type": "tabs",
         "children": [
           {
-            "id": "a0df744bcadb306c",
+            "id": "1377c07fd1415466",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -86,13 +86,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/编程基础/java/netty.md",
+                "file": "Code Life/好文推荐.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "netty 的大纲"
+              "title": "好文推荐 的大纲"
             }
           },
           {
@@ -110,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 272.5,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "583a3d5802849300",
@@ -172,7 +171,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 309.5,
+    "width": 404.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -187,32 +186,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a0df744bcadb306c",
+  "active": "1377c07fd1415466",
   "lastOpenFiles": [
-    "File/img/Pasted image 20250707225943.png",
-    "File/img/Pasted image 20250707225708.png",
-    "Code Life/项目实践/学习项目/API网关 - java.md",
-    "Code Life/编程基础/java/netty.md",
-    "Code Life/项目实践/企业场景方案/动态属性配置系统  - java.md",
-    "Code Life/搞着玩/Vim探索.md",
+    "Code Life/编程基础/java/Netty.md",
     "Code Life/编程基础/java/dubbo - rpc框架.md",
     "Code Life/好文推荐.md",
-    "Code Life/项目实践/企业场景方案/java",
-    "Code Life/项目实践/企业场景方案",
+    "Code Life/项目实践/学习项目/API网关 - java.md",
+    "File/img/Pasted image 20250707225708.png",
+    "File/img/Pasted image 20250707225943.png",
+    "File/img/image-20250603093902871.png",
+    "File/img/image-20250603093838489.png",
+    "File/img/image-20250603093745669.png",
+    "File/img/image-20250603093725572.png",
     "Code Life/搞着玩/Linux 探索.md",
+    "Code Life/搞着玩/Vim探索.md",
+    "Code Life/项目实践/企业场景方案/动态属性配置系统  - java.md",
+    "Code Life/项目实践/企业场景方案",
+    "Code Life/编程基础/java/netty.md",
     "conflict-files-obsidian-git.md",
     "Code Life/项目实践/开源项目",
     "Code Life/项目实践/学习项目",
     "Code Life/项目实践",
-    "File/img/image-20250603093725572.png",
     "File/pdf/img/0051.png",
     "File/pdf/img/0050.png",
     "File/pdf/img/0049.png",
     "File/pdf/img/0048.png",
-    "File/pdf/img/0047.png",
-    "File/pdf/img/0046.png",
-    "File/pdf/img/0044.png",
-    "File/pdf/img/0043.png",
     "File/pdf/img",
     "File/pdf/Netty04-优化与源码.md",
     "File/pdf/Netty03-netty进阶.md",
@@ -222,6 +220,7 @@
     "File/img",
     "File",
     "Code Life/编程基础/java",
+    "Code Life/编程基础",
     "代码基础/java/netty.md"
   ]
 }
