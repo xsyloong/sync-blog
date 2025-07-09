@@ -11,14 +11,14 @@
             "id": "1377c07fd1415466",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Code Life/编程基础/java/dubbo - rpc框架.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Code Life/搞着玩/Linux 探索.md",
+                "bFile": "Code Life/搞着玩/Linux 探索.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "dubbo - rpc框架"
+              "icon": "diff",
+              "title": "Diff: Linux 探索"
             }
           }
         ]
@@ -188,18 +188,20 @@
   },
   "active": "1377c07fd1415466",
   "lastOpenFiles": [
-    "Code Life/编程基础/java/Netty.md",
+    "Code Life/第三方系统架构/PostgreSQL.md",
+    "Code Life/探索之路/Linux 探索.md",
+    "Code Life/第三方系统架构",
+    "File/img/Pasted image 20250707225708.png",
     "Code Life/编程基础/java/dubbo - rpc框架.md",
+    "Code Life/编程基础/java/Netty.md",
     "Code Life/好文推荐.md",
     "Code Life/项目实践/学习项目/API网关 - java.md",
-    "File/img/Pasted image 20250707225708.png",
     "File/img/Pasted image 20250707225943.png",
     "File/img/image-20250603093902871.png",
     "File/img/image-20250603093838489.png",
     "File/img/image-20250603093745669.png",
     "File/img/image-20250603093725572.png",
-    "Code Life/搞着玩/Linux 探索.md",
-    "Code Life/搞着玩/Vim探索.md",
+    "Code Life/探索之路/Vim探索.md",
     "Code Life/项目实践/企业场景方案/动态属性配置系统  - java.md",
     "Code Life/项目实践/企业场景方案",
     "Code Life/编程基础/java/netty.md",
@@ -220,7 +222,6 @@
     "File/img",
     "File",
     "Code Life/编程基础/java",
-    "Code Life/编程基础",
     "代码基础/java/netty.md"
   ]
 }
