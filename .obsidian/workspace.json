@@ -11,14 +11,14 @@
             "id": "1377c07fd1415466",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Code Life/搞着玩/Linux 探索.md",
-                "bFile": "Code Life/搞着玩/Linux 探索.md",
-                "aRef": ""
+                "file": "Code Life/好文推荐.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: Linux 探索"
+              "icon": "lucide-file",
+              "title": "好文推荐"
             }
           }
         ]
