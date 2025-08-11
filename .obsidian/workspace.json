@@ -11,14 +11,14 @@
             "id": "ac4a9c30b3cc2925",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Code Life/编程基础/设计模式.md",
-                "mode": "source",
-                "source": false
+                "aFile": "Code Life/框架分析/java/netty.md",
+                "bFile": "Code Life/框架分析/java/netty.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "设计模式"
+              "icon": "diff",
+              "title": "Diff: netty"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "200289d43fb304ee",
@@ -143,17 +142,26 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/编程基础/设计模式.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "设计模式 的大纲"
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "421a64eaafb3e1be",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -173,11 +181,14 @@
   },
   "active": "ac4a9c30b3cc2925",
   "lastOpenFiles": [
-    "Code Life/编程基础/算法",
+    "Code Life/框架分析/java/netty.md",
     "Code Life/框架分析/java/dubbo - rpc框架.md",
+    "Code Life/编程基础/设计模式.md",
+    "Code Life/探索之路/Vim探索.md",
+    "Code Life/探索之路/Linux 探索.md",
+    "Code Life/编程基础/算法",
     "Code Life/框架分析/java",
     "Code Life/框架分析",
-    "Code Life/编程基础/设计模式.md",
     "Code Life/好文推荐.md"
   ]
 }
