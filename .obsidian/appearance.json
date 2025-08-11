@@ -2,5 +2,7 @@
   "cssTheme": "Border",
   "accentColor": "",
   "theme": "obsidian",
-  "enabledCssSnippets": []
+  "enabledCssSnippets": [
+    "icon"
+  ]
 }
