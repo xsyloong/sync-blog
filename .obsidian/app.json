@@ -5,5 +5,6 @@
     "File/pdf/img/"
   ],
   "vimMode": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "alwaysUpdateLinks": true
 }

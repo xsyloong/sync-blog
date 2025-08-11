@@ -17,7 +17,7 @@ Netty 是一个异步的、基于事件驱动的网络应用框架，用于快�
 
 ### 1.2 Netty 的作者
 
-![](img/0005.png)
+![](0005.png)
 
 他还是另一个著名网络应用框架 Mina 的重要贡献者
 
@@ -109,7 +109,7 @@ new ServerBootstrap()
 
 * 2 处，选择服务 Scoket 实现类，其中 NioServerSocketChannel 表示基于 NIO 的服务器端实现，其它实现还有
 
-  ![](img/0006.png)
+  ![](0006.png)
 
 * 3 处，为啥方法叫 childHandler，是接下来添加的处理器都是给 SocketChannel 用的，而不是给 ServerSocketChannel。ChannelInitializer 处理器（仅执行一次），它的作用是待客户端 SocketChannel 建立连接后，执行 initChannel 以便添加更多的处理器
 
@@ -145,7 +145,7 @@ new Bootstrap()
 
 * 2 处，选择客户 Socket 实现类，NioSocketChannel 表示基于 NIO 的客户端实现，其它实现还有
 
-  ![](img/0007.png)
+  ![](0007.png)
 
 * 3 处，添加 SocketChannel 的处理器，ChannelInitializer 处理器（仅执行一次），它的作用是待客户端 SocketChannel 建立连接后，执行 initChannel 以便添加更多的处理器
 * 4 处，指定要连接的服务器和端口
@@ -159,7 +159,7 @@ new Bootstrap()
 
 ### 2.4 流程梳理
 
-![](img/0040.png)
+![](0040.png)
 
 #### 💡 提示
 
@@ -307,7 +307,7 @@ public static void main(String[] args) throws InterruptedException {
 
 可以看到两个工人轮流处理 channel，但工人与 channel 之间进行了绑定
 
-![](img/0042.png)
+![](0042.png)
 
 
 
@@ -403,7 +403,7 @@ new ServerBootstrap()
 
 
 
-![](img/0041.png)
+![](0041.png)
 
 
 
@@ -657,7 +657,7 @@ public class CloseFutureClient {
 
 思考下面的场景，4 个医生给人看病，每个病人花费 20 分钟，而且医生看病的过程中是以病人为单位的，一个病人看完了，才能看下一个病人。假设病人源源不断地来，可以计算一下 4 个医生一天工作 8 小时，处理的病人总数是：`4 * 8 * 3 = 96`
 
-![](img/0044.png)
+![](0044.png)
 
 
 
@@ -675,7 +675,7 @@ public class CloseFutureClient {
 
 经研究发现，看病可以细分为四个步骤，经拆分后每个步骤需要 5 分钟，如下
 
-![](img/0048.png)
+![](0048.png)
 
 
 
@@ -689,7 +689,7 @@ public class CloseFutureClient {
 
 因此可以做如下优化，只有一开始，医生 2、3、4 分别要等待 5、10、15 分钟才能执行工作，但只要后续病人源源不断地来，他们就能够满负荷工作，并且处理病人的能力提高到了 `4 * 8 * 12` 效率几乎是原来的四倍
 
-![](img/0047.png)
+![](0047.png)
 
 要点
 
@@ -1081,7 +1081,7 @@ new Bootstrap()
 
 可以看到，ChannelInboundHandlerAdapter 是按照 addLast 的顺序执行的，而 ChannelOutboundHandlerAdapter 是按照 addLast 的逆序执行的。ChannelPipeline 的实现是一个 ChannelHandlerContext（包装了 ChannelHandler） 组成的双向链表
 
-![](img/0008.png)
+![](0008.png)
 
 * 入站处理器中，ctx.fireChannelRead(msg) 是 **调用下一个入站处理器**
   * 如果注释掉 1 处代码，则仅会打印 1
@@ -1101,7 +1101,7 @@ new Bootstrap()
 
 图1 - 服务端 pipeline 触发的原始流程，图中数字代表了处理步骤的先后次序
 
-![](img/0009.png)
+![](0009.png)
 
 
 
@@ -1184,7 +1184,7 @@ ByteBuf buffer = ByteBufAllocator.DEFAULT.directBuffer(10);
 
 ByteBuf 由四部分组成
 
-![](img/0010.png)
+![](0010.png)
 
 最开始读写指针都在 0 位置
 
@@ -1447,7 +1447,7 @@ public static boolean release(Object msg) {
 
 【零拷贝】的体现之一，对原始 ByteBuf 进行切片成多个 ByteBuf，切片后的 ByteBuf 并没有发生内存复制，还是使用原始 ByteBuf 的内存，切片后的 ByteBuf 维护独立的 read，write 指针
 
-![](img/0011.png)
+![](0011.png)
 
 例，原始 ByteBuf 进行一些初始操作
 
@@ -1558,7 +1558,7 @@ System.out.println(ByteBufUtil.prettyHexDump(origin));
 
 【零拷贝】的体现之一，就好比截取了原始 ByteBuf 所有内容，并且没有 max capacity 的限制，也是与原始 ByteBuf 使用同一块底层内存，只是读写指针是独立的
 
-![](img/0012.png)
+![](0012.png)
 
 
 
