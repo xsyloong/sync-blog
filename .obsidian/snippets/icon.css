@@ -1,0 +1,8 @@
+.nav-file-title[data-path$=".md"]::before {
+  content: url("./File/svg/md.svg"); /* 替换为你的图标路径 */
+  display: inline-block;
+  width: 16px; /* 根据需要调整图标大小 */
+  height: 16px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
