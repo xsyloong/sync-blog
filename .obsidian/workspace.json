@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Life/编程基础/java/dubbo - rpc框架.md",
+                "file": "Code Life/编程基础/设计模式.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dubbo - rpc框架"
+              "title": "设计模式"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "200289d43fb304ee",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code Life/编程基础/java/dubbo - rpc框架.md",
+                "file": "Code Life/编程基础/设计模式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "dubbo - rpc框架 的反向链接列表"
+              "title": "设计模式 的反向链接列表"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code Life/编程基础/java/dubbo - rpc框架.md",
+                "file": "Code Life/编程基础/设计模式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "dubbo - rpc框架 的出链列表"
+              "title": "设计模式 的出链列表"
             }
           },
           {
@@ -142,21 +143,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Life/编程基础/java/dubbo - rpc框架.md",
+                "file": "Code Life/编程基础/设计模式.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "dubbo - rpc框架 的大纲"
+              "title": "设计模式 的大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 211.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,6 +173,10 @@
   },
   "active": "ac4a9c30b3cc2925",
   "lastOpenFiles": [
+    "Code Life/编程基础/算法",
+    "Code Life/框架分析/java/dubbo - rpc框架.md",
+    "Code Life/框架分析/java",
+    "Code Life/框架分析",
     "Code Life/编程基础/设计模式.md",
     "Code Life/好文推荐.md"
   ]
