@@ -36,7 +36,7 @@
         "children": [
           {
             "id": "f549d375a2663c5e",
-            "type": "leaf",昂撒
+            "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
@@ -181,14 +181,5 @@
   },
   "active": "ac4a9c30b3cc2925",
   "lastOpenFiles": [
-    "Code Life/框架分析/java/netty.md",
-    "Code Life/框架分析/java/dubbo - rpc框架.md",
-    "Code Life/编程基础/设计模式.md",
-    "Code Life/探索之路/Vim探索.md",
-    "Code Life/探索之路/Linux 探索.md",
-    "Code Life/编程基础/算法",
-    "Code Life/框架分析/java",
-    "Code Life/框架分析",
-    "Code Life/好文推荐.md"
   ]
 }

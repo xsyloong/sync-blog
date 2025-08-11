@@ -1,9 +1,0 @@
-{
-  "attachmentFolderPath": "File/img",
-  "userIgnoreFilters": [
-    "File/img/",
-    "File/pdf/img/"
-  ],
-  "vimMode": false,
-  "readableLineLength": false
-}
