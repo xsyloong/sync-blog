@@ -1,0 +1,19 @@
+{
+  "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
+  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-rosewater",
+  "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "none",
+  "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-mocha",
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
+  "anuppuccin-theme-settings@@anp-active-line": "anp-current-line",
+  "Components@@tab-autohide": true,
+  "Components@@status-bar-autohide": true,
+  "Components@@Ribbon-autohide": true,
+  "Components@@nav-header-autohide": true,
+  "Components@@tab-title-bar-autohide": false,
+  "Components@@vault-profile-autohide": false,
+  "Components@@extra-anim-remove": true,
+  "Components@@anim-speed": 1.35,
+  "Components@@file-icon-remove": false,
+  "Components@@colorful-folder": true,
+  "Appearance-dark@@card-layout-open-dark": true
+}
