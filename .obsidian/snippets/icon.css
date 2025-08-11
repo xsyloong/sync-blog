@@ -1,11 +1,8 @@
-/*
- * --- 自定义 Markdown 文件图标 (v5.1 - 为你的 3:2 图标量身定制) ---
- * 使用高特异性选择器，反制主题的 mask-image，并应用自定义宽高比图标
- */
 
-/* 
- * 1. 使用高特异性选择器，精确定位到 .md 文件的 ::before 伪元素
- */
+.nav-file-title[data-path$=".md"] .nav-file-title-icon {
+  display: none !important;
+}
+
 body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path$=".md"]::before {
   /* --- 关键反制措施：摧毁原始的 mask 机制 --- */
   -webkit-mask-image: none !important;
@@ -15,8 +12,8 @@ body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .
 
 
   /* --- 应用我们自己的图标 (已为你完成净化和编码) --- */
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 1536 1024' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1425.067 21.589H110.933A110.933 110.933 0 0 0 0 132.181v723.627a110.933 110.933 0 0 0 110.933 110.933h1314.39c61.27 0 110.933-49.75 110.677-110.677V132.181A110.933 110.933 0 0 0 1425.067 21.59z' fill='%23FF7232'/%3e%3cpath d='M664.747 745.13V457.216l-147.627 184.49L369.664 457.216v288L221.61 678.059V243.115h147.627l147.626 184.576 147.542-184.576h147.626v565.76z' fill='%23FFFFFF'/%3e%3cpath d='M1024 21.333h426.667a85.333 85.333 0 0 1 85.333 85.334v768a85.333 85.333 0 0 1-85.333 85.333H1024V21.333z' fill='%23000000'/%3e%3cpath d='m1256.96 752.64-170.667-216.49h113.75V325.973h113.75v210.176h113.833z' fill='%23FFFFFF'/%3e%3c/svg%3e") !important;
-  
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M85.333 682.667V341.333h85.334l128 128 128-128H512v341.334h-85.333V462.08l-128 128-128-128v220.587H85.333m597.334-341.334h128V512h106.666L746.667 704 576 512h106.667V341.333z' fill='%232980FF'/%3e%3c/svg%3e") !important;
+
 
   /* --- 关键改动：适配 3:2 宽高比 --- */
   display: inline-block !important;
@@ -33,9 +30,8 @@ body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .
   background-position: center !important;
 }
 
-/* 
- * 2. 隐藏任何可能存在的、原始的 <img> 或 <i> 标签图标 (保持不变)
- */
-.nav-file-title[data-path$=".md"] .nav-file-title-icon {
-  display: none !important;
-}
+
+
+
+
+
