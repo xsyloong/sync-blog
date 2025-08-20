@@ -15,5 +15,6 @@
   "Components@@anim-speed": 1.35,
   "Components@@file-icon-remove": false,
   "Components@@colorful-folder": true,
-  "Appearance-dark@@card-layout-open-dark": true
+  "Appearance-dark@@card-layout-open-dark": false,
+  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-brighter"
 }
