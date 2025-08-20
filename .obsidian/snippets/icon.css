@@ -17,8 +17,9 @@ body:not(.file-icon-remove) .workspace-leaf-content[data-type="file-explorer"] .
 
   /* --- 关键改动：适配 3:2 宽高比 --- */
   display: inline-block !important;
-  height: auto !important; /* 对于非正方形图标，略微缩小高度可以获得更好的视觉对齐 */
+  height: 0.9em !important; /* 对于非正方形图标，略微缩小高度可以获得更好的视觉对齐 */
   width: auto !important; /* 宽度由浏览器根据高宽比自动计算 */
+  aspect-ratio: 3 / 2 !important; /* 核心：定义宽高比为 3:2 */
   
 
   /* --- 微调定位 --- */
