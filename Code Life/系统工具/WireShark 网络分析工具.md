@@ -10,4 +10,3 @@
 	1. 此时输入 `sudo usermod -aG wireshark $USER` ，然后重启系统即可。
 4. 具体使用在下文中有提及：
 	1. https://www.cnblogs.com/linyfeng/p/9496126.html
-	2. 
