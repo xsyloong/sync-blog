@@ -5,7 +5,7 @@
   "enabledCssSnippets": [
     "icon"
   ],
-  "textFontFamily": "Candara",
-  "monospaceFontFamily": "",
+  "textFontFamily": "Courier New",
+  "monospaceFontFamily": "Source Code Pro",
   "interfaceFontFamily": "Cascadia Code"
 }
