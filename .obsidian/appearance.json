@@ -5,7 +5,7 @@
   "enabledCssSnippets": [
     "icon"
   ],
-  "textFontFamily": "",
+  "textFontFamily": "Consolas",
   "monospaceFontFamily": "",
-  "interfaceFontFamily": "Cascadia Mono"
+  "interfaceFontFamily": ""
 }
