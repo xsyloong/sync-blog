@@ -4,5 +4,8 @@
   "theme": "obsidian",
   "enabledCssSnippets": [
     "icon"
-  ]
+  ],
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "interfaceFontFamily": "Cascadia Mono"
 }
