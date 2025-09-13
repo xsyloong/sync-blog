@@ -15,3 +15,10 @@
   ```
 
 - 如果使用注解则使用
+```java
+@Insert("insert into table_name (num,grade,name,age,sex)"
+            + "values(#{num},#{grade},#{name},#{age},#{sex}")
+@Options(useGeneratedKeys = true, keyProperty = "studentId", keyColumn = "student_id")
+void insert(Student student);
+```
+*此处涉及 Opions 注解，后续用到的时候在详解*
