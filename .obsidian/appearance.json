@@ -1,11 +1,1 @@
-{
-  "cssTheme": "Border",
-  "accentColor": "",
-  "theme": "obsidian",
-  "enabledCssSnippets": [
-    "icon"
-  ],
-  "textFontFamily": "Courier New",
-  "monospaceFontFamily": "Source Code Pro",
-  "interfaceFontFamily": "Cascadia Code"
-}
+{}
