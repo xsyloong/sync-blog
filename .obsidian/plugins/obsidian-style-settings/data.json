@@ -29,5 +29,7 @@
   "anuppuccin-theme-settings@@anp-layout-select": "anp-card-layout",
   "anuppuccin-theme-settings@@anp-card-shadows": false,
   "anuppuccin-theme-settings@@anp-card-layout-actions": true,
-  "anuppuccin-theme-settings@@anp-card-layout-filebrowser": true
+  "anuppuccin-theme-settings@@anp-card-layout-filebrowser": true,
+  "anuppuccin-theme-settings@@anp-hide-borders": false,
+  "anuppuccin-theme-settings@@anp-bg-fix": false
 }
