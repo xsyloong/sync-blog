@@ -1,9 +1,7 @@
 {
   "anuppuccin-theme-settings@@anuppuccin-accent-toggle": true,
-  "anuppuccin-theme-settings@@anuppuccin-theme-accents": "ctp-accent-rosewater",
   "anuppuccin-theme-settings@@anuppuccin-light-theme-accents": "none",
-  "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-mocha",
-  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-latte",
+  "anuppuccin-theme-settings@@anuppuccin-theme-dark": "ctp-macchiato",
   "anuppuccin-theme-settings@@anp-active-line": "anp-current-line",
   "Components@@tab-autohide": false,
   "Components@@status-bar-autohide": true,
@@ -18,5 +16,18 @@
   "Appearance-dark@@card-layout-open-dark": false,
   "Appearance-dark@@theme-dark-style-select": "theme-dark-background-brighter",
   "Appearance-light@@theme-light-style-select": "theme-light-background-default",
-  "Appearance-light@@mod-root-split-background-select-light": "mod-root-split-background-primary-light"
+  "Appearance-light@@mod-root-split-background-select-light": "mod-root-split-background-primary-light",
+  "anuppuccin-theme-settings@@anp-autohide-titlebar": true,
+  "anuppuccin-theme-settings@@anp-cursor": "pointer",
+  "anuppuccin-theme-settings@@anp-toggle-metadata": false,
+  "anuppuccin-theme-settings@@anp-toggle-scrollbars": false,
+  "anuppuccin-theme-settings@@anp-hide-status-bar": false,
+  "anuppuccin-theme-settings@@anp-tooltip-toggle": false,
+  "anuppuccin-theme-settings@@anp-hide-external-link-icon": false,
+  "anuppuccin-theme-settings@@anp-status-bar-select": "none",
+  "anuppuccin-theme-settings@@anp-alt-tab-style": "anp-alternate-tab-toggle",
+  "anuppuccin-theme-settings@@anp-layout-select": "anp-card-layout",
+  "anuppuccin-theme-settings@@anp-card-shadows": false,
+  "anuppuccin-theme-settings@@anp-card-layout-actions": true,
+  "anuppuccin-theme-settings@@anp-card-layout-filebrowser": true
 }
