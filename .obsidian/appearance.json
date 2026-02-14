@@ -1,4 +1,8 @@
 {
   "cssTheme": "Border",
-  "accentColor": ""
+  "accentColor": "",
+  "theme": "obsidian",
+  "monospaceFontFamily": "Maple Mono NF CN",
+  "textFontFamily": "Maple Mono NF CN",
+  "interfaceFontFamily": "Maple Mono NF CN"
 }
