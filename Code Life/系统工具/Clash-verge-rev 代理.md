@@ -386,3 +386,4 @@ return config;
 
 }
 ```
+3. clash关闭dns覆写设置
