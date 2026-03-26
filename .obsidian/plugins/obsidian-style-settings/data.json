@@ -32,5 +32,6 @@
   "anuppuccin-theme-settings@@anp-card-layout-filebrowser": true,
   "anuppuccin-theme-settings@@anp-hide-borders": false,
   "anuppuccin-theme-settings@@anp-bg-fix": false,
-  "anuppuccin-theme-settings@@anp-print": false
+  "anuppuccin-theme-settings@@anp-print": false,
+  "anuppuccin-theme-settings@@bold-weight": "400"
 }
