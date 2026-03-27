@@ -28,7 +28,21 @@ enum Option<T> {
 
 ## 过程宏
 > [!info] 简介
-> 过程宏
+> 过程宏分为三类
+> 1. Derive宏，只能用于struct, enum ,union 定义
+> ```rust
+> #[derive(Serialize)]
+>	struct User {
+>    id: u64,
+>    name: String,
+>	}
+>	//展开后会获得
+>	impl serde::Serialize for User {
+>    ...
+>	}
+> ```
+> 2. 属性宏
+> 3. 函数式过程宏
 
 ## 声名宏
 
