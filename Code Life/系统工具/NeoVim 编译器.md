@@ -3,6 +3,8 @@ Vim 众多例如 Neo-Vim,此处选择 Lazy-Vim   Lazy-Vim 是基于 Neo-Vim 的�
 
 # NeoVim 环境配置
 
+ [neovim官网](https://neovim.io/doc/install/)
+
 ## 基础下载
 1. 在linux系统使用官方安装配置命令
 ```bash
@@ -16,6 +18,6 @@ sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 ```
 
-## 基础配置
-
+## 使用LazyVim配置
+1. 
 
