@@ -40,15 +40,17 @@ enum Option<T> {
 >	say_hello!();
 > ```
 
-> [!info] 
+> [!info] 解析
 > 
 
 1. 自定义宏的构建模板
 ```rust
+// 1. 简单宏
 macro_rules! print_name {
     ($name:expr) => {
         println!("name = {}", $name);
     };
 }
+// 2. 多参数
 ```
 2. 
