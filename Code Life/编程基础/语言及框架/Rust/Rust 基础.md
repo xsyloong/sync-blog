@@ -33,8 +33,22 @@ enum Option<T> {
 > [!example] 实例
 > 标志就是类似这种 `vec!` 用法
 > ```rust
->// 1. 内置库 
->let v = vec![];
->// 2. 自定义宏
+>	// 1. 内置库 
+>	let v = vec![];
+>	// 2. 自定义宏
+>	macro_rules! say_hello {() => {println!("Hello!");};}
+>	say_hello!();
 > ```
 
+> [!info] 
+> 
+
+1. 自定义宏的构建模板
+```rust
+macro_rules! print_name {
+    ($name:expr) => {
+        println!("name = {}", $name);
+    };
+}
+```
+2. 
