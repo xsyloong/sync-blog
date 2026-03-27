@@ -29,7 +29,7 @@ enum Option<T> {
 ## 过程宏
 > [!info] 简介
 > 过程宏分为三类
-> 1. Derive宏，只能用于struct, enum ,union 定义, 针对类型生成 trait 实现
+> 1. Derive(派生宏)，只能用于struct, enum ,union 定义, 针对类型生成 trait 实现
 > ```rust
 > #[derive(Serialize)]
 >	struct User {
@@ -75,7 +75,12 @@ enum Option<T> {
 > 3. 函数式过程宏
 > `my_macro!(...)`
 
->[!]
+>[!tip] 工具
+>由案例可以见得，自定义宏需要手动解析token流，token是词元单位，手动解析token流是十分复杂的。因此几乎不用手动实现过程宏，如果后续有机会需要手动实现工具库有可能会接触
+>因此由如下工具
+>1. `syn`：读输入， **把 token 流解析成 Rust 语法树对象**
+>2. `quote`：写输出， **把你想生成的 Rust 代码，优雅地拼出来**
+
 ## 声名宏
 
 > [!example] 实例
