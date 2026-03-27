@@ -27,6 +27,8 @@ enum Option<T> {
 > Rust宏，准确来讲就是代码生成器，在编译期完成代码生成，和运行时无关
 
 ## 过程宏
+> [!info] 简介
+> 过程宏
 
 ## 声名宏
 
@@ -98,8 +100,22 @@ let a = sum!(1, 2, 3, 4);
 2. 宏的使用注意事项
 ```rust
 // 错误案例
-fn add(a: i32, b: i32) -> i32 {
-    a + b
+macro_rules! square {
+    ($x:expr) => {
+        $x * $x
+    };
 }
 
+fn main() {
+    let a = square!(3 + 1);
+    println!("{}", a);
+}
+
+// 展开后，可以看到 宏仍然会影响代码展开逻辑的，因此使用时需要多加考虑
+let a = 3 + 1 * 3 + 1;
+```
+3. 因为宏是代码生成，所以报错也在展开后的代码种报错，因此需要代码展开工具来进行调试
+```bash
+cargo install cargo-expand
+cargo expand
 ```
