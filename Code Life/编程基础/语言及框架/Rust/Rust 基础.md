@@ -29,7 +29,7 @@ enum Option<T> {
 ## 过程宏
 > [!info] 简介
 > 过程宏分为三类
-> 1. Derive宏，只能用于struct, enum ,union 定义
+> 1. Derive宏，只能用于struct, enum ,union 定义, 针对类型生成 trait 实现
 > ```rust
 > #[derive(Serialize)]
 >	struct User {
@@ -40,10 +40,42 @@ enum Option<T> {
 >	impl serde::Serialize for User {
 >    ...
 >	}
+>
+>// 自定义宏的模板
+>#[proc_macro_derive(MyDerive)]
+>pub fn my_derive(input: TokenStream) -> TokenStream {
+>    // 1. 解析输入
+>    // 2. 生成代码
+>    // 3. 返回新的代码
+>}
 > ```
-> 2. 属性宏
+> 2. 属性宏, 对一个完整语法项做“改造”或“增强”
+> ```rust
+>#[tokio::main]
+>async fn main() {
+> 	   println!("hello");
+>	}
+>	//展开后
+>	fn main() {
+>    let runtime = tokio::runtime::Runtime::new().unwrap();
+>    runtime.block_on(async {
+>        println!("hello");
+>    });
+}
+>#[route(GET, "/users")]
+>fn get_users() {}
+>
+>// 自定义宏的模板
+>#[proc_macro_attribute]
+>pub fn my_attr(attr: TokenStream, item: TokenStream) -> TokenStream {
+>    // attr: 属性里的参数
+>    // item: 被标记的那段代码
+>}
+> ```
 > 3. 函数式过程宏
+> `my_macro!(...)`
 
+>[!]
 ## 声名宏
 
 > [!example] 实例
