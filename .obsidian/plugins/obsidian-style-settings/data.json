@@ -33,5 +33,11 @@
   "anuppuccin-theme-settings@@anp-hide-borders": false,
   "anuppuccin-theme-settings@@anp-bg-fix": false,
   "anuppuccin-theme-settings@@anp-print": false,
-  "anuppuccin-theme-settings@@bold-weight": "400"
+  "anuppuccin-theme-settings@@bold-weight": "400",
+  "anuppuccin-theme-settings@@anp-h1-divider": true,
+  "anuppuccin-theme-settings@@anp-header-divider-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-h2-divider": false,
+  "anuppuccin-theme-settings@@anp-h3-divider": false,
+  "anuppuccin-theme-settings@@anp-header-color-toggle": true,
+  "anuppuccin-theme-settings@@anp-header-margin-toggle": false
 }

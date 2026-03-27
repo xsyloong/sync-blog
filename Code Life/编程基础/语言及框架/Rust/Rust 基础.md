@@ -1,0 +1,167 @@
+
+# 语法基础
+
+## 枚举
+
+>[!tip] 介绍
+>rust中的枚举相对java枚举是不一样的类型，java枚举是一种常量类型运行时不会改变。 
+>Rust枚举是一种“代数数据模型”中的“和类型”，意思是这个类型表达是某个数据的多种状态，不是这个状态就是那个状态。
+>还有一种是“积类型”，结构体struct，他代表这个数据同时包含这个结构体内所有的变量
+
+>[!INFO] 作用
+>积类型和和类型的组合，可以精确表达绝大多数业务数据模型，并且在类型层面排除非法状态
+
+1. 非常有代表性的数据类型Optional类型
+```rust
+enum Option<T> {
+    Some(T),
+    None,
+}
+```
+
+# 高级用法
+
+## 宏
+
+> [!tip] 介绍
+> Rust宏，准确来讲就是代码生成器，在编译期完成代码生成，和运行时无关
+
+## 过程宏
+> [!info] 简介
+> 过程宏分为三类
+> 1. Derive宏，只能用于struct, enum ,union 定义, 针对类型生成 trait 实现
+> ```rust
+> #[derive(Serialize)]
+>	struct User {
+>    id: u64,
+>    name: String,
+>	}
+>	//展开后会获得
+>	impl serde::Serialize for User {
+>    ...
+>	}
+>
+>// 自定义宏的模板
+>#[proc_macro_derive(MyDerive)]
+>pub fn my_derive(input: TokenStream) -> TokenStream {
+>    // 1. 解析输入
+>    // 2. 生成代码
+>    // 3. 返回新的代码
+>}
+> ```
+> 2. 属性宏, 对一个完整语法项做“改造”或“增强”
+> ```rust
+>#[tokio::main]
+>async fn main() {
+> 	   println!("hello");
+>	}
+>	//展开后
+>	fn main() {
+>    let runtime = tokio::runtime::Runtime::new().unwrap();
+>    runtime.block_on(async {
+>        println!("hello");
+>    });
+}
+>#[route(GET, "/users")]
+>fn get_users() {}
+>
+>// 自定义宏的模板
+>#[proc_macro_attribute]
+>pub fn my_attr(attr: TokenStream, item: TokenStream) -> TokenStream {
+>    // attr: 属性里的参数
+>    // item: 被标记的那段代码
+>}
+> ```
+> 3. 函数式过程宏
+> `my_macro!(...)`
+
+>[!]
+## 声名宏
+
+> [!example] 实例
+> 标志就是类似这种 `vec!` 用法
+> ```rust
+>	// 1. 内置库 
+>	let v = vec![];
+>	// 2. 自定义宏
+>	macro_rules! say_hello {() => {println!("Hello!");};}
+>	say_hello!();
+> ```
+
+> [!info] 解析
+> 宏是代码生成器，宏并不参与运行时代码逻辑，只会根据使用方式在编译期生成代码。
+> 1. 在宏中参数只是token，宏根据这些token来做生成逻辑，token只是一些字符并非变量
+> 	1. 如果token写作`$x`，说明token是一种参数变量，然后可以根据参数变量来做一些运行时逻辑
+> 	2. `$x`有多种类型：
+> 		- `expr`：表达式
+> 		- `stmt`：语句
+>		- `item`：条目，比如函数、结构体、impl
+>		- `ty`：类型
+>		- `pat`：模式
+>		- `ident`：标识符
+>		- `path`：路径
+>		- `block`：代码块
+>		- `tt`：token tree
+>		- `literal`：字面量
+>		- `meta`：属性元信息
+>		- `vis`：可见性，如 `pub`
+>	3. 声名宏就是根据 `$x` 类型来决定生成哪段代码
+>2. 重复匹配
+>	1. 宏可以匹配多次
+>		- $( ... )* 重复 0 次或多次
+>		- $( ... )+ 重复 1 次或多次
+>		- $( ... )? 可选 0 次或 1 次
+>```rust
+>	macro_rules! sum {
+>    ($($x:expr),*) => {
+>        0 $(+ $x)*
+>    };
+>	}
+>	let a = sum!(1, 2, 3, 4);
+>```
+
+
+1. 自定义宏的构建模板
+```rust
+macro_rules! 宏名 {
+    (模式1) => { 展开1 };
+    (模式2) => { 展开2 };
+    ...
+}
+
+// 1. 简单宏
+macro_rules! print_name {
+    ($name:expr) => {
+        println!("name = {}", $name);
+    };
+}
+// 2. 多参数
+macro_rules! sum {
+    ($($x:expr),*) => {
+        0 $(+ $x)*
+    };
+}
+let a = sum!(1, 2, 3, 4);
+```
+2. 宏的使用注意事项
+```rust
+// 错误案例
+macro_rules! square {
+    ($x:expr) => {
+        $x * $x
+    };
+}
+
+fn main() {
+    let a = square!(3 + 1);
+    println!("{}", a);
+}
+
+// 展开后，可以看到 宏仍然会影响代码展开逻辑的，因此使用时需要多加考虑
+let a = 3 + 1 * 3 + 1;
+```
+3. 因为宏是代码生成，所以报错也在展开后的代码种报错，因此需要代码展开工具来进行调试
+```bash
+cargo install cargo-expand
+cargo expand
+```
