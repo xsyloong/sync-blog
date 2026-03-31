@@ -19,5 +19,7 @@ export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
 ```
 
 ## 使用LazyVim配置
-1. 
+1. 由于刚下载的neovim并没有配置文件目录，因此直接下载lazy.vim
+2. 运行`git clone https://github.com/LazyVim/starter ~/.config/nvim` 直接下载lazy.vim的配置文件
+3. 删除
 
