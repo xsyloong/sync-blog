@@ -41,4 +41,21 @@ library-cli/
   }
 }
 ```
-2. 
+2. 编译与运行
+```json
+//运行npm run build 在build目录下就是编译好的js代码
+//运行 npm run start 就会启动
+{
+  "name": "library-cli",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
+```
