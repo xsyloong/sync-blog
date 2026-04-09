@@ -73,3 +73,10 @@ dot = >
 slash = ?
 ```
 3. 执行reload `sudo keyd reload` 
+4. 完全移除`keyd`插件
+```bash
+sudo systemctl stop keyd
+sudo systemctl disable keyd
+sudo apt remove --purge keyd
+sudo rm -rf /etc/keyd/
+```
