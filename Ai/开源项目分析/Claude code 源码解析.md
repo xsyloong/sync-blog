@@ -10,7 +10,7 @@
 
 ## step 02 构建工具
 
-## step 03 构建todo
+## step 03 构建工作todo
 
 # Claude Code 源码教学
 
