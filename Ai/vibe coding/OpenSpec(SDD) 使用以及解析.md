@@ -65,12 +65,13 @@ your-project/
 
 ## 使用流程
 
-1. 创建变更提案
-	1. 使用命令`/opsx:propose <description>
-		- 根据用户提供的描述推断出kebab-case变更名
-		- 创建 `openspec/changes/<name>/`
-		- 依次生成 `proposal.md`、`design.md`、`specs/`、`tasks.md` 所有文档
-	2. 创建变更目录 `/opsx:new <change-name>
+### 创建变更提案
+
+1. 使用命令`/opsx:propose <description>
+	- 根据用户提供的描述推断出kebab-case变更名
+	- 创建 `openspec/changes/<name>/`
+	- 依次生成 `proposal.md`、`design.md`、`specs/`、`tasks.md` 所有文档
+2. 创建变更目录 `/opsx:new <change-name>
 		1. 只生成目录不创建任何文档
 		2. 配合 `/opsx:continue` 逐步手动生成文档时使用。
 ```
@@ -83,3 +84,40 @@ fix-login-timeout
 feature1           # 太模糊
 addUserAuth        # 应使用 kebab-case
 ```
+
+### 变更文件说明
+
+#### 文件说明
+
+```
+openspec/changes/<change-name>/
+├── .openspec.yaml     # 变更元数据（ID、状态、创建时间等，由 CLI 自动管理）
+├── proposal.md        # 提案文档【必填】描述 Why 和 What
+├── design.md          # 技术设计文档（架构、数据模型、API 设计等）
+├── tasks.md           # 实现任务清单（按里程碑组织的待办事项）
+└── specs/             # 规范目录（存放能力规范文件）
+    ├── <capability-1>/
+    │   └── spec.md    # 能力规范（使用 Requirement + Scenario 格式）
+    ├── <capability-2>/
+    │   └── spec.md
+```
+
+|文件|作用|是否必需|格式要求|
+|---|---|---|---|
+|`proposal.md`|说明“为什么做”和“做什么”|**必需**|必须包含 `## Why` 和 `## What Changes`（验证器强制检查）；推荐包含 `## Capabilities`（AI 工作流所需）|
+|`specs/<capability>/spec.md`|详细的需求和验收场景|**必需**|必须使用 Delta Header + Requirement + Scenario 格式|
+|`design.md`|技术实现方案|推荐|无严格格式要求|
+|`tasks.md`|实现任务清单|推荐|无严格格式要求|
+#### 变更的生命周期
+
+```
+提案 (斜杠命令) → 编写规范 → 验证 (validate) → 实现 (apply) → 归档 (archive)
+```
+
+1. **提案**：`/opsx:propose <description>`（一步生成所有规划文档）
+2. **编写规范**：编辑 proposal.md 和 specs/
+3. **验证**：`openspec validate <name>`
+4. **实现**：`/opsx:apply` 按照 tasks.md 执行开发
+5. **归档**：`/opsx:archive` 将变更中的规范增量（Delta）合并回 `openspec/specs/` 主规范目录，并清理 `openspec/changes/` 下的临时目录，标志着该功能规范已正式「上线」
+
+## 文档结构规范
