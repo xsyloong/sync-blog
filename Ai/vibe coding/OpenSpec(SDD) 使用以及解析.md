@@ -5,3 +5,7 @@
 ## 实践文档
 
 [OpenSpec实践]([OpenSpec实践](https://forceinjection.github.io/OpenSpec-practise/))
+
+## 实践解析
+
+1. 
