@@ -187,4 +187,80 @@ specs/
 
 **核心要求：** 必须使用 Delta Header + Requirement + Scenario 格式。
 
-1. 
+1. 格式要点
+
+| 元素           | 格式                                       | 示例                             |
+| ------------ | ---------------------------------------- | ------------------------------ |
+| Delta Header | `## ADDED/MODIFIED/REMOVED Requirements` | `## ADDED Requirements`        |
+| 需求标题         | `### Requirement: <标题>`                  | `### Requirement: GPU 自动发现`    |
+| 场景标题         | `#### Scenario: <标题>`                    | `#### Scenario: NVIDIA GPU 发现` |
+| 场景内容         | Gherkin 格式                               | `Given/When/Then`              |
+**Delta Header 选择说明**：
+
+|Delta Header|适用场景|
+|---|---|
+|`## ADDED Requirements`|本次变更新增的能力或需求|
+|`## MODIFIED Requirements`|对已有规范中某个 Requirement 的修改|
+|`## REMOVED Requirements`|明确废弃或删除的需求|
+
+2. 完整格式模板
+```
+spec.md 结构：
+├── # 能力名称
+├── ## Overview（概述，推荐）
+│   - 能力简介
+│   - 解决的问题
+└── ## ADDED/MODIFIED/REMOVED Requirements 【必需】
+    ├── ### Requirement: <标题>
+    │   ├── **Priority**: P0/P1/P2
+    │   ├── **Rationale**: ...
+    │   └── #### Scenario: <标题>
+    │       └── Given/When/Then
+```
+
+3. 示例
+> 以下示例展示核心 Requirement + Scenario 结构。完整示例（含 `## Overview` 段落）参见 `examples/openspec/changes/v1-mvp/specs/domain-model/spec.md`（电商领域模型规范）
+```
+## ADDED Requirements
+
+### Requirement: 商品实体定义
+
+系统 SHALL 定义商品实体，包含唯一标识、名称、价格和库存。
+
+**Priority**: P0 (Critical)
+
+**Rationale**: 商品是电商系统的核心实体，是所有交易的基础。
+
+#### Scenario: 创建有效商品
+
+Given 需要创建新商品
+When 提供商品信息 { id, name, priceCents, stock }
+Then 商品实体创建成功
+And id 格式为 prod_xxxx
+And priceCents >= 0
+```
+
+### design.md - 技术设计
+
+技术设计文档没有严格的格式要求，但建议包含以下章节。
+
+| 章节名称                  | 建议内容                                   |
+| --------------------- | -------------------------------------- |
+| Architecture Overview | 系统整体架构图（建议使用 Mermaid 或 ASCII 图）及层次关系说明 |
+| Core Components       | 核心模块列表，每个模块的职责、边界和内部实现要点               |
+| Data Model            | 关键实体的字段定义、类型、约束及实体间关系                  |
+| API Design            | 接口路由、请求/响应格式、错误码规范                     |
+| Integration Patterns  | 与外部系统/模块的集成方式，包括事件、队列、同步调用等            |
+| Technology Stack      | 所选技术及库、选型理由和备选方案对比                     |
+| Security              | 身份认证、权限控制、数据加密、输入校验等安全设计要点             |
+| Deployment            | 环境要求、部署步骤、回滚方案                         |
+
+### tasks.md - 任务清单
+
+**建议章节结构**：
+
+- **Milestone**：按里程碑对实现步骤分组（如 M1 基础层、M2 API 层、M3 测试）。每个任务拆小，确保单个任务可在 2 小时内完成。
+- **Definition of Done**：列出此里程碑的完成标准，如代码通过 CI、测试覆盖率达标、spec validate 通过等。
+- **Progress Tracking**：利用 `- [x]` / `- [ ]` 标记完成进度，方便 IDE 内直观查看。
+
+**示例**
