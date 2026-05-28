@@ -10,29 +10,26 @@
 
 1. 安装OpenSpec `npm install -g @fission-ai/openspec@latest`
 2. 命令速查
-``` shell
-#初始化项目
-openspec init --tools none
 
-# 创建变更目录（仅创建目录，不生成文档）
-openspec new change <name>
+| 命令                                | 说明                                                    | 示例                                             |
+| --------------------------------- | ----------------------------------------------------- | ---------------------------------------------- |
+| `openspec init`                   | 初始化 OpenSpec 项目                                       | `openspec init --tools qoder`                  |
+| `openspec new change <name>`      | 仅创建变更目录结构                                             | `openspec new change add-user-auth`            |
+| `openspec update`                 | 更新 AI 技能和命令文件                                         | `openspec update`                              |
+| `openspec view`                   | 打开终端交互界面                                              | `openspec view`                                |
+| `openspec status --change <name>` | 查看变更状态                                                | `openspec status --change user-auth`           |
+| `openspec validate <name>`        | 验证变更文档格式                                              | `openspec validate user-auth`                  |
+| `openspec list --changes`         | 列出所有变更                                                | `openspec list --changes`                      |
+| `openspec list --specs`           | 列出所有规范                                                | `openspec list --specs`                        |
+| `openspec show <name>`            | 显示变更详情                                                | `openspec show user-auth --json --deltas-only` |
+| `openspec archive <name>`         | 归档已完成的变更（将 Delta 合并至 `specs/` 主目录并清理 `changes/` 临时目录） | `openspec archive user-auth`                   |
+| `openspec config list`            | 查看当前配置                                                | `openspec config list`                         |
+| `openspec config profile`         | 设置工作流 Profile                                         | `openspec config profile`                      |
+| `openspec templates`              | 查看内置文档模板的绝对路径                                         | `openspec templates`                           |
+| `openspec schemas`                | 列出可用 Schema                                           | `openspec schemas`                             |
+| `openspec --version`              | 查看版本号                                                 | `openspec --version`                           |
+| `openspec --help`                 | 查看帮助信息                                                | `openspec --help`                              |
 
-# 列出所有变更 / 规范
-openspec list --changes
-openspec list --specs
-
-# 验证变更
-openspec validate <name>
-
-# 查看状态
-openspec status --change <name>
-
-# 归档变更
-openspec archive <name>
-
-# 更新工具文件
-openspec update
-```
 
 ## 目录分析
 1. 使用`openspec init` 选择相对应工具后会在项目根目录生成对应文档
@@ -298,3 +295,10 @@ And priceCents >= 0
 - [ ] 实现 OrderService.checkout
 ```
 
+## 推荐做法
+
+- **一个能力一个文件夹**：按功能领域划分能力
+- **需求粒度适中**：每个需求应该是可测试的单一功能点
+- **场景具体化**：使用具体的 Gherkin 场景描述行为
+- **优先级标注**：为每个需求标注 P0/P1/P2 优先级
+- **添加 Rationale**：说明为什么需要这个需求
