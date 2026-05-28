@@ -67,6 +67,6 @@ your-project/
 	1. 使用命令`/opsx:propose <description>
 		- 根据用户提供的描述推断出kebab-case变更名
 		- 创建 `openspec/changes/<name>/`
-4. 依次生成 `proposal.md`、`design.md`、`specs/`、`tasks.md` 所有文档
-	1. 
+		- 依次生成 `proposal.md`、`design.md`、`specs/`、`tasks.md` 所有文档
+	2. 
 5. 
