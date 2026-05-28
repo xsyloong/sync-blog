@@ -63,6 +63,7 @@ your-project/
 | `changes/`    | 存放活跃的变更提案               | 必需   |
 | `specs/`      | 存放已归档的规范                | 可选   |
 
+
 ## 使用流程
 
 ### 创建变更提案
@@ -162,6 +163,10 @@ proposal.md 结构：
 **注意**：章节标题必须完全匹配 `## Why` 和 `## What Changes`（区分大小写）。
 
 ### specs/ 目录 - 能力规范
+
+> [!INFO] 介绍
+> 能力包含一个功能闭包（区别于DDD的业务闭包domain，业务闭包比如订单领域可能包含多个能力：创建订单，取消订单等等）。
+> 划分能力也是关键的一环
 
 **核心要求：** specs/ 必须使用能力文件夹（capability folders），每个能力一个文件夹。
 
@@ -263,4 +268,33 @@ And priceCents >= 0
 - **Definition of Done**：列出此里程碑的完成标准，如代码通过 CI、测试覆盖率达标、spec validate 通过等。
 - **Progress Tracking**：利用 `- [x]` / `- [ ]` 标记完成进度，方便 IDE 内直观查看。
 
-**示例**
+**示例：**
+```
+## Milestone 1 - Domain Model
+
+### Definition of Done
+
+- 完成所有 P0 Requirement 的实现
+- `openspec validate v1-mvp` 验证通过
+- 单元测试覆盖所有领域实体
+
+### Tasks
+
+- [x] 定义 Product 实体类型（id、name、priceCents、stock）
+- [x] 定义 Cart / CartItem 实体类型
+- [ ] 定义 Order / OrderItem 实体类型
+- [ ] 实现领域实体的编排验证逻辑
+
+## Milestone 2 - Service Layer
+
+### Definition of Done
+
+- 所有服务方法均有对应集成测试
+
+### Tasks
+
+- [ ] 实现 CatalogService.getProduct / listProducts
+- [ ] 实现 CartService.addItem / removeItem
+- [ ] 实现 OrderService.checkout
+```
+
