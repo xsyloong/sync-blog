@@ -39,5 +39,7 @@
   "anuppuccin-theme-settings@@anp-h2-divider": false,
   "anuppuccin-theme-settings@@anp-h3-divider": false,
   "anuppuccin-theme-settings@@anp-header-color-toggle": true,
-  "anuppuccin-theme-settings@@anp-header-margin-toggle": false
+  "anuppuccin-theme-settings@@anp-header-margin-toggle": false,
+  "cupertino@@adaptive-mode-off": true,
+  "cupertino@@colorful-frame": false
 }
