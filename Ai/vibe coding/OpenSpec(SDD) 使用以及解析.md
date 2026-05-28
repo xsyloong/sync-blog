@@ -60,6 +60,25 @@ your-project/
 | `changes/`    | 存放活跃的变更提案               | 必需   |
 | `specs/`      | 存放已归档的规范                | 可选   |
 
+``` yaml
+schema: spec-driven
+
+context: |
+  Tech stack: TypeScript, React, Node.js
+  Testing: Jest with React Testing Library
+  API: RESTful, documented in docs/api.md
+  We maintain backwards compatibility for all public APIs
+
+rules:
+  proposal:
+    - Include rollback plan for risky changes
+  specs:
+    - Use Given/When/Then format for scenarios
+  design:
+    - Include sequence diagrams for complex flows
+  tasks:
+    - Break tasks into max 2-hour chunks
+```
 
 ## 使用流程
 
@@ -297,8 +316,124 @@ And priceCents >= 0
 
 ## 推荐做法
 
+### 推荐实践
 - **一个能力一个文件夹**：按功能领域划分能力
 - **需求粒度适中**：每个需求应该是可测试的单一功能点
 - **场景具体化**：使用具体的 Gherkin 场景描述行为
 - **优先级标注**：为每个需求标注 P0/P1/P2 优先级
 - **添加 Rationale**：说明为什么需要这个需求
+
+### 场景编写最佳实践
+场景描述是连接业务语言与技术验证的桥梁。采用标准的 Gherkin 语法能够消除歧义，确保每个场景都能转化为明确的可执行测试。
+
+#### Gherkin 格式要点
+
+|关键字|用途|示例|
+|---|---|---|
+|`Given`|前置条件，描述系统初始状态|`Given 用户已登录系统`|
+|`When`|触发动作|`When 用户点击"提交订单"按钮`|
+|`Then`|预期结果|`Then 订单状态变为"待支付"`|
+|`And`|连接多个条件或结果|`And 用户收到订单确认邮件`|
+
+#### 好的场景示例
+
+```
+Scenario: 使用信用卡支付订单
+
+Given 用户已登录系统
+And 购物车中有 2 件商品，总价 299 元
+And 用户已绑定信用卡
+When 用户选择"信用卡支付"并确认
+Then 订单创建成功
+And 从信用卡扣除 299 元
+And 用户收到支付成功通知
+And 库存减少 2 件
+```
+
+#### 不好的场景示例
+
+```
+Scenario: 支付
+
+Given 系统
+When 支付
+Then 成功
+```
+
+**问题**：
+
+- 太模糊，无法验证
+- 缺少具体的前置条件
+- 没有明确的预期结果
+
+### 迭代开发最佳实践
+
+规范驱动并非僵化的瀑布流，而是拥抱变化的增量过程。在迭代开发中，保持文档与代码的同步更新，是维持系统一致性的关键。
+
+- **增量添加**：可以随时添加新的需求到变更中
+- **频繁验证**：使用 `openspec validate` 确保格式正确
+- **版本控制**：将 OpenSpec 文档纳入 Git 管理
+- **及时归档**：完成开发后使用 `openspec archive` 归档变更
+- **存量项目（Brownfield）优先从小处入手**：对于已有历史代码的项目，建议从一个小的、相对独立的功能开始创建第一个 Change，逐步建立规范体系，不要试图一次性为所有旧代码补规范
+
+### 与 AI 协作最佳实践
+
+充分发挥大模型潜力的关键在于合理利用工作流指令和上下文管理。通过结构化的交互模式，可以有效降低 AI 的幻觉并提升代码生成质量。
+
+#### OPSX 斜杠命令（Slash Commands，推荐）
+
+OpenSpec 1.0+ 引入了全新的 OPSX 工作流，替换了旧版的阶段锁定模式。所有命令均通过 `openspec init` 安装到 AI 工具对应目录。
+
+**默认 Core 配置（常用 4 个命令）**:
+
+|命令|作用|
+|---|---|
+|`/opsx:propose <description>`|一步创建变更并**智能生成**所有规划文档（AI 基于描述自动推断 kebab-case 目录名并填充 proposal/design/specs/tasks）|
+|`/opsx:explore`|进入探索模式，思考问题、调查代码库，不写代码|
+|`/opsx:apply`|按照 tasks.md 实现任务|
+|`/opsx:archive`|完成并归档当前变更|
+
+**扩展工作流命令（通过 `openspec config profile` 开启）**
+
+|命令|作用|
+|---|---|
+|`/opsx:new`|仅初始化变更目录结构，不创建文档|
+|`/opsx:continue`|按依赖顺序创建下一个文档（逐步模式）|
+|`/opsx:ff`|快进生成所有规划文档（一步到位）|
+|`/opsx:verify`|验证实现是否与规范一致|
+|`/opsx:sync`|将 Delta Spec 合并到主规范（不归档）|
+|`/opsx:bulk-archive`|批量归档多个已完成的变更|
+|`/opsx:onboard`|带教 15 分钟全流程引导，适合新手上手|
+
+> **迁移说明**：旧版命令（`/openspec:proposal`、`/openspec:apply`、`/openspec:archive`）已在 v1.0.0 移除。修复映射关系：
+> 
+> - `/openspec:proposal` → `/opsx:propose`
+> - `/openspec:apply` → `/opsx:apply`
+> - `/openspec:archive` → `/opsx:archive`
+
+#### 8.5.2 与 AI 协作的技巧[](https://forceinjection.github.io/OpenSpec-practise/docs/openspec-user-manual.html#852-%E4%B8%8E-ai-%E5%8D%8F%E4%BD%9C%E7%9A%84%E6%8A%80%E5%B7%A7)
+
+1. **先探索后提案**：不确定时先用 `/opsx:explore` 思考，明确后再 `/opsx:propose`
+2. **支持流动迭代**：实现过程发现设计错误？直接编辑对应文档即可，无阶段锁定
+3. **定期清理对话上下文**：开始实现任务前，建议清空当前对话上下文，确保高质量的指令注入效果
+4. **增量迭代**：完成一个需求后验证，再进行下一个
+
+### 团队协作最佳实践
+
+将 OpenSpec 融入团队现有的研发流程中，需要建立配套的审查机制与文档维护习惯，从而确保规范体系在长期协作中不被破坏。
+
+#### 代码审查清单
+
+在 PR 审查时，检查 OpenSpec 文档：
+
+- [ ] proposal.md 有清晰的 Why 和 What
+- [ ] 每个 Requirement 都有至少一个 Scenario
+- [ ] Scenario 使用标准的 Gherkin 格式
+- [ ] 优先级标注合理
+- [ ] 没有遗漏重要的边界场景
+
+#### 文档维护
+
+- **保持更新**：实现过程中如果发现规范需要调整，及时更新文档
+- **同步修改**：如果需求变更，先更新 spec.md 再修改代码
+- **归档记录**：归档的变更应保留历史记录，便于追溯
