@@ -41,5 +41,11 @@
   "anuppuccin-theme-settings@@anp-header-color-toggle": true,
   "anuppuccin-theme-settings@@anp-header-margin-toggle": false,
   "cupertino@@adaptive-mode-off": true,
-  "cupertino@@colorful-frame": false
+  "cupertino@@colorful-frame": false,
+  "cupertino@@tab-floating": true,
+  "cupertino@@hover-ribbon": true,
+  "cupertino@@hover-sidedock": false,
+  "cupertino@@focus-view": false,
+  "cupertino@@nav-action-center": true,
+  "cupertino@@tab-icon": false
 }

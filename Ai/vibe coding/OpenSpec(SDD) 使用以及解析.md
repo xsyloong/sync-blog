@@ -6,6 +6,53 @@
 
 [OpenSpec实践]([OpenSpec实践](https://forceinjection.github.io/OpenSpec-practise/))
 
-## 实践解析
+## 安装
 
-1. 安装OpenSpec
+1. 安装OpenSpec `npm install -g @fission-ai/openspec@latest`
+2. 命令速查
+``` shell
+#初始化项目
+openspec init --tools none
+
+# 创建变更目录（仅创建目录，不生成文档）
+openspec new change <name>
+
+# 列出所有变更 / 规范
+openspec list --changes
+openspec list --specs
+
+# 验证变更
+openspec validate <name>
+
+# 查看状态
+openspec status --change <name>
+
+# 归档变更
+openspec archive <name>
+
+# 更新工具文件
+openspec update
+```
+
+## 目录分析
+1. 使用`openspec init` 选择相对应工具后会在项目根目录生成对应文档
+```
+your-project/
+├── openspec/                     # OpenSpec 工作目录
+│   ├── config.yaml               # 项目配置（技术栈、约定规则等，注入 AI 请求）
+│   ├── changes/                  # 变更提案目录（每个功能/变更一个文件夹）
+│   └── specs/                    # 主规范目录（已归档的规范）
+├── .qoder/                       # Qoder 专属目录（示例）
+│   ├── commands/opsx/            # /opsx 斜杠命令（供 IDE 直接调用）
+│   │   ├── propose.md
+│   │   ├── explore.md
+│   │   ├── apply.md
+│   │   └── archive.md
+│   └── skills/                   # Agent Skills（AI 自动检测并加载）
+│       ├── openspec-propose/SKILL.md
+│       ├── openspec-explore/SKILL.md
+│       ├── openspec-apply-change/SKILL.md
+│       └── openspec-archive-change/SKILL.md
+└── ... (项目其他文件)
+```
+2. 
