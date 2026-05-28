@@ -2,6 +2,7 @@
 >	llm大语言模型，对于上下文十分敏感。过长的无关内容和命令会导致Llm出现严重的幻觉，十分影响llm效率和能力。因此为了提高实践的效果，增加llm代码生成的效率，采用 规范驱动开发（SSD）这条路径。
 >	规范驱动开发： 主要是将产品功能和代码采用一定的规范联系起来。
 
+# OpenSpec 实践
 ## 实践文档
 
 [OpenSpec实践]([OpenSpec实践](https://forceinjection.github.io/OpenSpec-practise/))
@@ -405,13 +406,7 @@ OpenSpec 1.0+ 引入了全新的 OPSX 工作流，替换了旧版的阶段锁定
 |`/opsx:bulk-archive`|批量归档多个已完成的变更|
 |`/opsx:onboard`|带教 15 分钟全流程引导，适合新手上手|
 
-> **迁移说明**：旧版命令（`/openspec:proposal`、`/openspec:apply`、`/openspec:archive`）已在 v1.0.0 移除。修复映射关系：
-> 
-> - `/openspec:proposal` → `/opsx:propose`
-> - `/openspec:apply` → `/opsx:apply`
-> - `/openspec:archive` → `/opsx:archive`
-
-#### 8.5.2 与 AI 协作的技巧[](https://forceinjection.github.io/OpenSpec-practise/docs/openspec-user-manual.html#852-%E4%B8%8E-ai-%E5%8D%8F%E4%BD%9C%E7%9A%84%E6%8A%80%E5%B7%A7)
+#### 与 AI 协作的技巧
 
 1. **先探索后提案**：不确定时先用 `/opsx:explore` 思考，明确后再 `/opsx:propose`
 2. **支持流动迭代**：实现过程发现设计错误？直接编辑对应文档即可，无阶段锁定
@@ -437,3 +432,5 @@ OpenSpec 1.0+ 引入了全新的 OPSX 工作流，替换了旧版的阶段锁定
 - **保持更新**：实现过程中如果发现规范需要调整，及时更新文档
 - **同步修改**：如果需求变更，先更新 spec.md 再修改代码
 - **归档记录**：归档的变更应保留历史记录，便于追溯
+
+# OpenSpec 拆解
