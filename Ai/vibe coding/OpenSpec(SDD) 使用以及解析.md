@@ -71,9 +71,9 @@ your-project/
 		- 创建 `openspec/changes/<name>/`
 		- 依次生成 `proposal.md`、`design.md`、`specs/`、`tasks.md` 所有文档
 	2. 创建变更目录 `/opsx:new <change-name>
-		- 只生成目录不创建任何文档
-		- 配合 `/opsx:continue` 逐步手动生成文档时使用。
-``` txt
+		1. 只生成目录不创建任何文档
+		2. 配合 `/opsx:continue` 逐步手动生成文档时使用。
+```
 # 好的命名示例
 add-user-authentication
 add-payment-module
@@ -83,5 +83,3 @@ fix-login-timeout
 feature1           # 太模糊
 addUserAuth        # 应使用 kebab-case
 ```
-		- sd afdsa 
-		- 
