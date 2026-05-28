@@ -42,7 +42,7 @@ your-project/
 │   ├── config.yaml               # 项目配置（技术栈、约定规则等，注入 AI 请求）
 │   ├── changes/                  # 变更提案目录（每个功能/变更一个文件夹）
 │   └── specs/                    # 主规范目录（已归档的规范）
-├── .qoder/                       # Qoder 专属目录（示例）
+├── .claude/                       # cladue 专属目录（示例,根据使用ai工具不同名称不同）
 │   ├── commands/opsx/            # /opsx 斜杠命令（供 IDE 直接调用）
 │   │   ├── propose.md
 │   │   ├── explore.md
@@ -55,4 +55,13 @@ your-project/
 │       └── openspec-archive-change/SKILL.md
 └── ... (项目其他文件)
 ```
-2. 
+2. 文件说明
+
+| 文件/目录         | 用途                      | 是否必需 |
+| ------------- | ----------------------- | ---- |
+| `config.yaml` | 项目背景、技术栈、约束条件、每类文档的规则注入 | 推荐填写 |
+| `changes/`    | 存放活跃的变更提案               | 必需   |
+| `specs/`      | 存放已归档的规范                | 可选   |
+
+3. 创建变更提案
+4. 
