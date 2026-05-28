@@ -2,5 +2,6 @@
   "showLineNumber": false,
   "readableLineLength": false,
   "tabSize": 2,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "focusNewTab": true
 }
