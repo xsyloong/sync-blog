@@ -136,4 +136,55 @@ OpenSpec 的设计理念是“先想清楚为什么做，再决定做什么，�
 - `## What Changes` - 说明具体要添加、修改或删除什么（**验证器强制检查**）
 - `## Capabilities` - 列出 New / Modified Capabilities，驱动 `specs/<name>/spec.md` 文件的生成（**推荐，AI 工作流所需**）
 
-###
+#### 完整格式模板
+> 内置模板路径可通过 `openspec templates` 命令查看；`/opsx:propose` 斜杠命令会自动生成填充好的完整提案。
+
+章节必须结构
+```
+proposal.md 结构：
+├── ## Why 【必需 - 验证器强制检查】
+│   ├── ### Background（背景）
+│   ├── ### Problem Statement（问题描述）
+│   └── ### Alternatives Considered（备选方案）
+├── ## What Changes 【必需 - 验证器强制检查】
+│   ├── ### New Resources Added（新增资源）
+│   └── ### New Capabilities（功能点简述，自然语言概括即可）
+├── ## Capabilities 【推荐 - AI 工作流所需，驱动 spec 文件生成】
+│   ├── ### New Capabilities（kebab-case 标识符列表，每项对应 specs/<name>/ 目录）
+│   └── ### Modified Capabilities（已有能力的 requirement 变更）
+├── ## Impact（影响范围）
+├── ## Scope（范围，可选）
+│   ├── ### In Scope
+│   └── ### Out of Scope
+├── ## Goals（成功标准，可选）
+└── ## References（参考链接，可选）
+```
+**注意**：章节标题必须完全匹配 `## Why` 和 `## What Changes`（区分大小写）。
+
+### specs/ 目录 - 能力规范
+
+**核心要求：** specs/ 必须使用能力文件夹（capability folders），每个能力一个文件夹。
+
+目录结构
+```
+specs/
+├── accelerator-management/     # 能力一：加速器管理
+│   └── spec.md
+├── training-job-lifecycle/     # 能力二：训练任务生命周期
+│   └── spec.md
+├── inference-service/          # 能力三：推理服务
+│   └── spec.md
+└── relationship-management/    # 能力四：关系管理
+    └── spec.md
+```
+
+重要规则：
+- 不要在 specs/ 根目录直接放置 spec.md 文件
+- 每个能力文件夹名称使用 kebab-case
+- 文件夹名称应体现能力领域
+
+### spec.md - 能力规范格式
+
+**核心要求：** 必须使用 Delta Header + Requirement + Scenario 格式。
+
+1. 
