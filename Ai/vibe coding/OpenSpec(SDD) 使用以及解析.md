@@ -121,3 +121,19 @@ openspec/changes/<change-name>/
 5. **归档**：`/opsx:archive` 将变更中的规范增量（Delta）合并回 `openspec/specs/` 主规范目录，并清理 `openspec/changes/` 下的临时目录，标志着该功能规范已正式「上线」
 
 ## 文档结构规范
+
+OpenSpec 强调文档的结构化和规范化，通过明确定义 `proposal.md` 的提案架构和 `spec.md` 的能力场景契约，确保 AI 助手和开发人员能够无歧义地解析需求并生成可靠的代码。**请务必遵循这些格式，否则 `openspec validate` 会失败。**
+
+> **模板文件**：OpenSpec 内置了所有文档模板，可通过 `openspec templates` 命令查看各模板路径，或直接使用 `/opsx:propose` / `/opsx:new` 斜杠命令自动生成完整文档。
+
+### proposal.md - 提案文档 
+
+**核心要求：** proposal.md 必须包含 `## Why` 和 `## What Changes` 两个验证器强制检查的必需章节；推荐包含 `## Capabilities` 章节，作为 AI 自动生成 `specs/<name>/spec.md` 文件的关键输入。
+
+#### 章节要求
+OpenSpec 的设计理念是“先想清楚为什么做，再决定做什么，再明确影响哪些能力”：
+- `## Why` - 说明变更的背景、问题和动机（**验证器强制检查**）
+- `## What Changes` - 说明具体要添加、修改或删除什么（**验证器强制检查**）
+- `## Capabilities` - 列出 New / Modified Capabilities，驱动 `specs/<name>/spec.md` 文件的生成（**推荐，AI 工作流所需**）
+
+###

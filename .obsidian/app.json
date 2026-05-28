@@ -3,5 +3,7 @@
   "readableLineLength": false,
   "tabSize": 2,
   "alwaysUpdateLinks": true,
-  "focusNewTab": true
+  "focusNewTab": true,
+  "spellcheck": false,
+  "autoPairMarkdown": true
 }
