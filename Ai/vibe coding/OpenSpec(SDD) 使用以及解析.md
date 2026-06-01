@@ -307,6 +307,7 @@ And priceCents >= 0
 | Security              | 身份认证、权限控制、数据加密、输入校验等安全设计要点             |
 | Deployment            | 环境要求、部署步骤、回滚方案                         |
 
+
 ### tasks.md - 任务清单
 
 **建议章节结构**：
