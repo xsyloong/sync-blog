@@ -85,11 +85,11 @@ rules:
 
 ### 创建变更提案
 
-1. 使用命令`/opsx:propose <description>
+1. 使用命令 `/opsx:propose <description>`
 	- 根据用户提供的描述推断出kebab-case变更名
 	- 创建 `openspec/changes/<name>/`
 	- 依次生成 `proposal.md`、`design.md`、`specs/`、`tasks.md` 所有文档
-2. 创建变更目录 `/opsx:new <change-name>
+2. 创建变更目录 `/opsx:new <change-name>`
 		1. 只生成目录不创建任何文档
 		2. 配合 `/opsx:continue` 逐步手动生成文档时使用。
 ```
