@@ -10,8 +10,13 @@
 
 >[!question] 注意
 >这一步根据系统不同，注意命令格式
+>
+>**最重要核心配置**
+> net.ipv4.ip_forward=1 
+> net.ipv6.conf.all.forwarding=1
 
-1. 
+1. 原文是： `sudo sed -i '/net.ipv4.ip_forward/s/^#//;/net.ipv6.conf.all.forwarding/s/^#//' /etc/sysctl.conf && sudo sysctl -p` 命令实现，在ubuntu26无法使用
+2. 可行的命令是： `echo -e "net.ipv4.ip_forward=1\nnet.ipv6.conf.all.forwarding=1" | sudo tee /etc/sysctl.d/99-mihomo-forward.conf`
 
 
 ### 下载 mihomo 内核二进制文件并配置服务
