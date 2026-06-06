@@ -291,7 +291,8 @@ WantedBy=multi-user.target
 9. 赋予开机自启动权限 `sudo systemctl enable mihomo`
 10. 立即启动内核服务 `sudo systemctl start mihomo`
 11. 常用日常维护命令
-	- `sudo systemctl reload mihomo`
-	- `sudo systemctl status mihomo`
-	- `journalctl -u mihomo -o cat -f`
-	- 
+	- 重载配置（修改 `config.yaml` 规则或更换节点后无缝生效） `sudo systemctl reload mihomo`
+	- 查看当前内核服务运行健康状态 `sudo systemctl status mihomo`
+	- 实时查看内核数据转发滚动日志 `journalctl -u mihomo -o cat -f`
+	- 网关物理网卡重启（更改静态 IP 或上游网关后备用）(*注意：* 目前该配置在ubuntu26上未生效) `sudo systemctl restart networking`
+### 安装后网页配置 `http://127.0.0.1:9090/ui` 
