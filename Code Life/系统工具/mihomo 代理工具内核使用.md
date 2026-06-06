@@ -33,7 +33,7 @@
 # =================================================================
 proxy-providers:
   Airport1:
-    url: "切换成相对应的订阅连接"
+    url: "切换成相对应的订阅连接1"
     type: http
     interval: 86400
     health-check:
@@ -43,7 +43,7 @@ proxy-providers:
     proxy: 直连
     
   Airport2:
-    url: "https://speedtest.wag1719.top/sub/best-cn.yaml?token=RUNytcxFwQPfeWKGT6Jh3MZg"
+    url: "切换成相对应的订阅连接2"
     type: http
     interval: 86400
     health-check:
