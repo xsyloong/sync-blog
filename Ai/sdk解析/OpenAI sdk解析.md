@@ -204,17 +204,17 @@ export interface ChoiceDeltaToolCall {
 }
 ```
 
-|属性路径|类型|出现时机|说明|
-|---|---|---|---|
-|`id`|`string`|所有 chunk|同一请求所有 chunk 共享|
-|`object`|`string`|所有 chunk|固定为 `chat.completion.chunk`|
-|`model`|`string`|所有 chunk|实际使用的模型名|
-|`choices[0].delta.role`|`string`|仅第一个 chunk|固定为 `assistant`|
-|`choices[0].delta.content`|`string \| null`|文本生成中|文本增量，工具调用时为 `null`|
-|`choices[0].delta.tool_calls`|`array`|工具调用时|工具调用增量数组|
-|`choices[0].delta.tool_calls[i].index`|`number`|工具调用时|区分并行多工具|
-|`choices[0].delta.tool_calls[i].id`|`string`|工具首帧|工具调用唯一 ID|
-|`choices[0].delta.tool_calls[i].function.name`|`string`|工具首帧|函数名，只出现一次|
-|`choices[0].delta.tool_calls[i].function.arguments`|`string`|工具调用中|参数 JSON 增量，需拼接|
-|`choices[0].finish_reason`|`string \| null`|最后一帧|`null`=生成中，非null=结束|
-|`usage`|`object`|最末帧|需开启 `include_usage`|
+| 属性路径                                                | 类型               | 出现时机       | 说明                          |
+| --------------------------------------------------- | ---------------- | ---------- | --------------------------- |
+| `id`                                                | `string`         | 所有 chunk   | 同一请求所有 chunk 共享             |
+| `object`                                            | `string`         | 所有 chunk   | 固定为 `chat.completion.chunk` |
+| `model`                                             | `string`         | 所有 chunk   | 实际使用的模型名                    |
+| `choices[0].delta.role`                             | `string`         | 仅第一个 chunk | 固定为 `assistant`             |
+| `choices[0].delta.content`                          | `string \| null` | 文本生成中      | 文本增量，工具调用时为 `null`          |
+| `choices[0].delta.tool_calls`                       | `array`          | 工具调用时      | 工具调用增量数组                    |
+| `choices[0].delta.tool_calls[i].index`              | `number`         | 工具调用时      | 区分并行多工具                     |
+| `choices[0].delta.tool_calls[i].id`                 | `string`         | 工具首帧       | 工具调用唯一 ID                   |
+| `choices[0].delta.tool_calls[i].function.name`      | `string`         | 工具首帧       | 函数名，只出现一次                   |
+| `choices[0].delta.tool_calls[i].function.arguments` | `string`         | 工具调用中      | 参数 JSON 增量，需拼接              |
+| `choices[0].finish_reason`                          | `string \| null` | 最后一帧       | `null`=生成中，非null=结束         |
+| `usage`                                             | `object`         | 最末帧        | 需开启 `include_usage`         |
