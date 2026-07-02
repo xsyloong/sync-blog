@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1782889372121",
+    "text": "每日leetcode（最少2题）",
+    "type": null,
+    "completed": false,
+    "date": "2026-07-01",
+    "timeRange": "17:00-18:10",
+    "startDate": null,
+    "endDate": null,
+    "stages": null,
+    "completedDates": null,
+    "notifiedDates": null,
+    "earlyCompletedDate": null,
+    "earlyCompletedNote": null,
+    "timeSlot": null,
+    "customTime": null,
+    "notified": true
+  },
+  {
+    "id": "1782895117060",
+    "text": "提示词工程学习",
+    "type": "longTerm",
+    "completed": false,
+    "date": "2026-07-01",
+    "timeRange": "09:00-18:00",
+    "startDate": "2026-07-01",
+    "endDate": "2026-07-03",
+    "stages": [],
+    "completedDates": [],
+    "notifiedDates": [
+      "2026-07-02"
+    ],
+    "earlyCompletedDate": null,
+    "earlyCompletedNote": null,
+    "timeSlot": null,
+    "customTime": null,
+    "notified": false
+  },
+  {
+    "id": "1782960627917",
+    "text": "每日leetcode(最少两道)",
+    "type": "longTerm",
+    "completed": false,
+    "date": "2026-07-02",
+    "timeRange": "09:00-18:00",
+    "startDate": "2026-07-02",
+    "endDate": "2026-07-03",
+    "stages": [],
+    "completedDates": [],
+    "notifiedDates": [],
+    "earlyCompletedDate": null,
+    "earlyCompletedNote": null,
+    "timeSlot": null,
+    "customTime": null,
+    "notified": false
+  }
+]
