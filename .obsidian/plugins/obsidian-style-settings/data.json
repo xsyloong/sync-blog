@@ -43,7 +43,7 @@
   "cupertino@@adaptive-mode-off": true,
   "cupertino@@colorful-frame": false,
   "cupertino@@tab-floating": true,
-  "cupertino@@hover-ribbon": true,
+  "cupertino@@hover-ribbon": false,
   "cupertino@@hover-sidedock": false,
   "cupertino@@focus-view": false,
   "cupertino@@nav-action-center": true,
