@@ -27,7 +27,9 @@
     "startDate": "2026-07-01",
     "endDate": "2026-07-03",
     "stages": [],
-    "completedDates": [],
+    "completedDates": [
+      "2026-07-03"
+    ],
     "notifiedDates": [
       "2026-07-02",
       "2026-07-03"
