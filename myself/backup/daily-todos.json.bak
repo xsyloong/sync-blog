@@ -29,7 +29,8 @@
     "stages": [],
     "completedDates": [],
     "notifiedDates": [
-      "2026-07-02"
+      "2026-07-02",
+      "2026-07-03"
     ],
     "earlyCompletedDate": null,
     "earlyCompletedNote": null,
@@ -47,8 +48,12 @@
     "startDate": "2026-07-02",
     "endDate": "2026-07-03",
     "stages": [],
-    "completedDates": [],
-    "notifiedDates": [],
+    "completedDates": [
+      "2026-07-03"
+    ],
+    "notifiedDates": [
+      "2026-07-03"
+    ],
     "earlyCompletedDate": null,
     "earlyCompletedNote": null,
     "timeSlot": null,
