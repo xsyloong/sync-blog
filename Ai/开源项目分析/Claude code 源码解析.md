@@ -1,4 +1,5 @@
->[!info] claude code源码泄露
+>[!info] claude code源码
+>[Claude 技术指南](https://yeasy.gitbook.io/claude_guide) 该项目指明 claude 如何用好。
 >Agent 基础，跟着Claude学习Agent构建 [Agent](https://learn.shareai.run/en/s01/)
 > 
 >2026/04/01 Claude Code源码泄露， 现根据对其解析过程学习内部agent的组织原理
