@@ -88,10 +88,10 @@
     "startDate": "2026-07-06",
     "endDate": "2026-07-10",
     "stages": [],
-    "completedDates": [
-      "2026-07-06"
+    "completedDates": [],
+    "notifiedDates": [
+      "2026-07-07"
     ],
-    "notifiedDates": [],
     "earlyCompletedDate": null,
     "earlyCompletedNote": null,
     "timeSlot": null,
@@ -102,7 +102,7 @@
     "id": "1783321419554",
     "text": "Agent 原理学习",
     "type": "normal",
-    "completed": true,
+    "completed": false,
     "date": "2026-07-06",
     "timeRange": "09:00-18:00",
     "startDate": null,
