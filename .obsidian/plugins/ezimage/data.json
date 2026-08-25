@@ -1,9 +1,9 @@
 {
   "provider": "r2",
   "r2": {
-    "accountId": "",
+    "accountId": "c6b9db1797ad8435fc04e8b4c2333d2b",
     "accessKeyId": "",
-    "secretAccessKey": "",
+    "secretAccessKey": "cfat_eagqVLZEmZSU0514q6k7OByPiQgoJqGQZtiIr3bj7492d38c",
     "bucketName": "blog",
     "publicUrl": "https://pub-3d9f294b944b4717900bef6491b2e41c.r2.dev"
   },
