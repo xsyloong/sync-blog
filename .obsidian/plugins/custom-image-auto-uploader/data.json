@@ -1,0 +1,36 @@
+{
+  "isAutoUpload": true,
+  "isAutoDown": true,
+  "isCloseNotice": true,
+  "afterUploadTimeout": 1000,
+  "api": "http://127.0.0.1:36677/upload",
+  "apiToken": "",
+  "clipboardReadTip": "",
+  "excludeDomains": "",
+  "isDeleteSource": true,
+  "uploadImageRandomSearch": true,
+  "isCompress": true,
+  "compressMaxWidth": 1200,
+  "compressMaxHeight": 1200,
+  "compressQuality": 1,
+  "contentSet": {
+    "key": "",
+    "type": "none",
+    "width": "0",
+    "height": "0"
+  },
+  "propertyNeedSets": [
+    {
+      "key": "cover",
+      "type": "none",
+      "width": "0",
+      "height": "0"
+    },
+    {
+      "key": "images",
+      "type": "none",
+      "width": "0",
+      "height": "0"
+    }
+  ]
+}
