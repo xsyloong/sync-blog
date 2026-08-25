@@ -1,0 +1,22 @@
+{
+  "provider": "r2",
+  "r2": {
+    "accountId": "",
+    "accessKeyId": "",
+    "secretAccessKey": "",
+    "bucketName": "blog",
+    "publicUrl": "https://pub-3d9f294b944b4717900bef6491b2e41c.r2.dev"
+  },
+  "pathTemplate": "{yyyy}/{MM}/{timestamp}-{random}.{ext}",
+  "markdownImageTemplate": "![]({{url}})",
+  "compress": true,
+  "compressionExcludedExtensions": [
+    "gif"
+  ],
+  "maxWidth": 1920,
+  "quality": 85,
+  "maxFileSizeMB": 20,
+  "stripExif": true,
+  "localSaveByDefault": false,
+  "language": "zh"
+}
