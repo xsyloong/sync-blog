@@ -10,7 +10,7 @@
 
 >[!info] 引言
 >当今 Claude Code 是 Agent 中做的最好的工具Agent，他提出 Harness Engineering （驾驭工程）实现从LLM到真正的工程化项目落地。
->![[Pasted image 20260415002339.png]]
+>![](https://pub-3d9f294b944b4717900bef6491b2e41c.r2.dev/2026/08/1787745754351-nzc6oj8f.webp)
 >接下来我们要学习的不仅仅是 Claude Code 的源代码实现，更是 Harness Engineering 的核心思想。
 ## step 01 构建循环
 
