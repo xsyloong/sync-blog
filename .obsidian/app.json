@@ -6,5 +6,6 @@
   "focusNewTab": true,
   "spellcheck": false,
   "autoPairMarkdown": true,
-  "attachmentFolderPath": "File/img"
+  "attachmentFolderPath": "File/img",
+  "promptDelete": false
 }
